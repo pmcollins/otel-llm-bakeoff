@@ -15,8 +15,7 @@ Each scenario runs the same LangChain application, but is instrumented in a uniq
 
 ## Operation
 
-These examples have been run and their telemetry saved to this repo in the `json/` directory. However, if you want to
-run them and see their telemetry:
+To run the examples and see their telemetry:
 
 1. `pip install oteltest`
 2. `oteltest ott-example-name.py`
