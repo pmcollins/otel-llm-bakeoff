@@ -27,8 +27,7 @@ To run the example scripts and see their telemetry:
 ## Observations
 
 * 🧁 OpenLLMetry
-    * Repo contains many separate Python packages, so you can `pip install opentelemetry-instrumentation-langchain`
-      separately.
+    * Repo uses modular packaging, so you can `pip install opentelemetry-instrumentation-langchain` separately.
     * Emits telemetry with attribute keys containing the word "traceloop".
     * OpenLLMetry has claimed the package names of upstream OTel.
 * 🍥 Local copy of OpenLLMetry package(s)
