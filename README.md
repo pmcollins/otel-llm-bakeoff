@@ -1,4 +1,4 @@
-# LangChain Instrumentation Bakeoff
+# LangChain Instrumentation Bakeoff 🥮🍰🧁🍥
 
 This repository compares four different approaches to instrumenting LangChain applications.
 
