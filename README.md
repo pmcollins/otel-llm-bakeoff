@@ -15,7 +15,7 @@ Each scenario runs the same LangChain application, but is instrumented in a uniq
 
 ## Operation
 
-To run the examples and see their telemetry:
+To run the example scripts and see their telemetry:
 
 1. `pip install oteltest`
 2. `oteltest ott-example-name.py`
