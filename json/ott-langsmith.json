@@ -1,0 +1,1315 @@
+{
+  "metric_requests": [],
+  "trace_requests": [
+    {
+      "pbreq": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "langsmith"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "langsmith"
+                },
+                "spans": [
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "1nksWusGpbY=",
+                    "parentSpanId": "7gtSEbKGKfk=",
+                    "name": "RunnableParallel<question>",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684501221924096",
+                    "endTimeUnixNano": "1747684501222807040",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501221924Z9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"What is the capital of France?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"question\":\"What is the capital of France?\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "KZQMQmx6wF8=",
+                    "parentSpanId": "1nksWusGpbY=",
+                    "name": "RunnablePassthrough",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684501222507008",
+                    "endTimeUnixNano": "1747684501222696960",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "a1f176bf-089c-48dd-89d4-2a346e987978"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501221924Z9067e67a-c5da-4fd8-8d7d-16f34edd564c.20250519T195501222507Za1f176bf-089c-48dd-89d4-2a346e987978"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnablePassthrough"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "map:key:question"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"What is the capital of France?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"What is the capital of France?\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "WW8nIY5+UWI=",
+                    "parentSpanId": "7gtSEbKGKfk=",
+                    "name": "ChatPromptTemplate",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684501223145984",
+                    "endTimeUnixNano": "1747684501223462144",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "f9ab0fa2-7a76-46fa-a964-08fca64b0475"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501223146Zf9ab0fa2-7a76-46fa-a964-08fca64b0475"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "prompt"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:2"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.serialized.name",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"question\":\"What is the capital of France?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":{\"messages\":[{\"content\":\"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: What is the capital of France?\\n\\n    Please provide a helpful answer:\\n    \",\"additional_kwargs\":{},\"response_metadata\":{},\"type\":\"human\"}]}}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "S4MC7EjnvzU=",
+                    "parentSpanId": "7gtSEbKGKfk=",
+                    "name": "StrOutputParser",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502215379968",
+                    "endTimeUnixNano": "1747684502215940096",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "a5694a39-e032-4f6e-ae4c-8e610a98d175"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195502215380Za5694a39-e032-4f6e-ae4c-8e610a98d175"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "parser"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "StrOutputParser"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "parser"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:4"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":{\"content\":\"The capital of France is Paris.\",\"additional_kwargs\":{\"refusal\":null},\"response_metadata\":{\"token_usage\":{\"completion_tokens\":7,\"prompt_tokens\":39,\"total_tokens\":46,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0resZ4GCyYSYUnGCWU2zEWIPrm2\",\"service_tier\":\"default\",\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ai\",\"id\":\"run--f8156b8b-f6f1-45a9-bb69-2bc570ebe45f-0\",\"example\":false,\"tool_calls\":[],\"invalid_tool_calls\":[],\"usage_metadata\":{\"input_tokens\":39,\"output_tokens\":7,\"total_tokens\":46,\"input_token_details\":{\"audio\":0,\"cache_read\":0},\"output_token_details\":{\"audio\":0,\"reasoning\":0}}}}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"The capital of France is Paris.\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "N8oHf8R2mFg=",
+                    "parentSpanId": "uSk2MMHafPE=",
+                    "name": "RunnableParallel<question>",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502216887040",
+                    "endTimeUnixNano": "1747684502218031872",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "af9e4747-5ef8-46f3-89d4-a433edecb2cf"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457.20250519T195502216887Zaf9e4747-5ef8-46f3-89d4-a433edecb2cf"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"How does photosynthesis work?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"question\":\"How does photosynthesis work?\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "LGGweRb6vzw=",
+                    "parentSpanId": "N8oHf8R2mFg=",
+                    "name": "RunnablePassthrough",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502217479936",
+                    "endTimeUnixNano": "1747684502217794816",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "a9aed8f4-91b8-4851-8664-c028f5cc270f"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457.20250519T195502216887Zaf9e4747-5ef8-46f3-89d4-a433edecb2cf.20250519T195502217480Za9aed8f4-91b8-4851-8664-c028f5cc270f"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "af9e4747-5ef8-46f3-89d4-a433edecb2cf"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnablePassthrough"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "map:key:question"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"How does photosynthesis work?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"How does photosynthesis work?\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "xnLSeVO0/Oc=",
+                    "parentSpanId": "uSk2MMHafPE=",
+                    "name": "ChatPromptTemplate",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502218333952",
+                    "endTimeUnixNano": "1747684502218878976",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "eccb1112-8ff4-4f2d-a71c-7d12aeff1140"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457.20250519T195502218334Zeccb1112-8ff4-4f2d-a71c-7d12aeff1140"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "prompt"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:2"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.serialized.name",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"question\":\"How does photosynthesis work?\"}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":{\"messages\":[{\"content\":\"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: How does photosynthesis work?\\n\\n    Please provide a helpful answer:\\n    \",\"additional_kwargs\":{},\"response_metadata\":{},\"type\":\"human\"}]}}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "9Qs/SlWTvuA=",
+                    "parentSpanId": "7gtSEbKGKfk=",
+                    "name": "ChatOpenAI",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684501618596096",
+                    "endTimeUnixNano": "1747684502214749184",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "llm"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.serialized.name",
+                        "value": {
+                          "stringValue": "ChatOpenAI"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"messages\":[[{\"lc\":1,\"type\":\"constructor\",\"id\":[\"langchain\",\"schema\",\"messages\",\"HumanMessage\"],\"kwargs\":{\"content\":\"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: What is the capital of France?\\n\\n    Please provide a helpful answer:\\n    \",\"type\":\"human\"}}]]}"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "f8156b8b-f6f1-45a9-bb69-2bc570ebe45f"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501618596Zf8156b8b-f6f1-45a9-bb69-2bc570ebe45f"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "ChatOpenAI"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_provider",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_model_name",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_model_type",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:3"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "39"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "7"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "46"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"generations\":[[{\"generation_info\":{\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ChatGeneration\",\"message\":{\"lc\":1,\"type\":\"constructor\",\"id\":[\"langchain\",\"schema\",\"messages\",\"AIMessage\"],\"kwargs\":{\"content\":\"The capital of France is Paris.\",\"additional_kwargs\":{\"refusal\":null},\"response_metadata\":{\"token_usage\":{\"completion_tokens\":7,\"prompt_tokens\":39,\"total_tokens\":46,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0resZ4GCyYSYUnGCWU2zEWIPrm2\",\"service_tier\":\"default\",\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ai\",\"id\":\"run--f8156b8b-f6f1-45a9-bb69-2bc570ebe45f-0\",\"usage_metadata\":{\"input_tokens\":39,\"output_tokens\":7,\"total_tokens\":46,\"input_token_details\":{\"audio\":0,\"cache_read\":0},\"output_token_details\":{\"audio\":0,\"reasoning\":0}},\"tool_calls\":[],\"invalid_tool_calls\":[]}},\"text\":\"The capital of France is Paris.\"}]],\"llm_output\":{\"token_usage\":{\"completion_tokens\":7,\"prompt_tokens\":39,\"total_tokens\":46,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0resZ4GCyYSYUnGCWU2zEWIPrm2\",\"service_tier\":\"default\"},\"run\":null,\"type\":\"LLMResult\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+                    "spanId": "7gtSEbKGKfk=",
+                    "name": "RunnableSequence",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684501187802112",
+                    "endTimeUnixNano": "1747684502216118016",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"What is the capital of France?\"}"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"The capital of France is Paris.\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "okNRKah+pSA=",
+                    "parentSpanId": "uSk2MMHafPE=",
+                    "name": "StrOutputParser",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684503845944832",
+                    "endTimeUnixNano": "1747684503846853888",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "d6b53316-bf90-48ce-8574-e2a02fb3826e"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457.20250519T195503845945Zd6b53316-bf90-48ce-8574-e2a02fb3826e"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "parser"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "StrOutputParser"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "parser"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:4"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":{\"content\":\"Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose molecules. This process involves the absorption of sunlight by chlorophyll molecules in the chloroplasts of plant cells, which triggers a series of chemical reactions that ultimately produce glucose and oxygen as byproducts. The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\",\"additional_kwargs\":{\"refusal\":null},\"response_metadata\":{\"token_usage\":{\"completion_tokens\":97,\"prompt_tokens\":38,\"total_tokens\":135,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0reXrZd8Jexf6QXqkPTMZEDvO9I\",\"service_tier\":\"default\",\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ai\",\"id\":\"run--b743a241-d195-439d-994e-c48ede31e78d-0\",\"example\":false,\"tool_calls\":[],\"invalid_tool_calls\":[],\"usage_metadata\":{\"input_tokens\":38,\"output_tokens\":97,\"total_tokens\":135,\"input_token_details\":{\"audio\":0,\"cache_read\":0},\"output_token_details\":{\"audio\":0,\"reasoning\":0}}}}"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose molecules. This process involves the absorption of sunlight by chlorophyll molecules in the chloroplasts of plant cells, which triggers a series of chemical reactions that ultimately produce glucose and oxygen as byproducts. The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "L0oD40g5G58=",
+                    "parentSpanId": "uSk2MMHafPE=",
+                    "name": "ChatOpenAI",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502219258112",
+                    "endTimeUnixNano": "1747684503844647936",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "llm"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.serialized.name",
+                        "value": {
+                          "stringValue": "ChatOpenAI"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"messages\":[[{\"lc\":1,\"type\":\"constructor\",\"id\":[\"langchain\",\"schema\",\"messages\",\"HumanMessage\"],\"kwargs\":{\"content\":\"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: How does photosynthesis work?\\n\\n    Please provide a helpful answer:\\n    \",\"type\":\"human\"}}]]}"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "b743a241-d195-439d-994e-c48ede31e78d"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457.20250519T195502219258Zb743a241-d195-439d-994e-c48ede31e78d"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.parent_id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "ChatOpenAI"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_provider",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_model_name",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.ls_model_type",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.tags",
+                        "value": {
+                          "stringValue": "seq:step:3"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "38"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "97"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "135"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"generations\":[[{\"generation_info\":{\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ChatGeneration\",\"message\":{\"lc\":1,\"type\":\"constructor\",\"id\":[\"langchain\",\"schema\",\"messages\",\"AIMessage\"],\"kwargs\":{\"content\":\"Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose molecules. This process involves the absorption of sunlight by chlorophyll molecules in the chloroplasts of plant cells, which triggers a series of chemical reactions that ultimately produce glucose and oxygen as byproducts. The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\",\"additional_kwargs\":{\"refusal\":null},\"response_metadata\":{\"token_usage\":{\"completion_tokens\":97,\"prompt_tokens\":38,\"total_tokens\":135,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0reXrZd8Jexf6QXqkPTMZEDvO9I\",\"service_tier\":\"default\",\"finish_reason\":\"stop\",\"logprobs\":null},\"type\":\"ai\",\"id\":\"run--b743a241-d195-439d-994e-c48ede31e78d-0\",\"usage_metadata\":{\"input_tokens\":38,\"output_tokens\":97,\"total_tokens\":135,\"input_token_details\":{\"audio\":0,\"cache_read\":0},\"output_token_details\":{\"audio\":0,\"reasoning\":0}},\"tool_calls\":[],\"invalid_tool_calls\":[]}},\"text\":\"Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose molecules. This process involves the absorption of sunlight by chlorophyll molecules in the chloroplasts of plant cells, which triggers a series of chemical reactions that ultimately produce glucose and oxygen as byproducts. The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\"}]],\"llm_output\":{\"token_usage\":{\"completion_tokens\":97,\"prompt_tokens\":38,\"total_tokens\":135,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0}},\"model_name\":\"gpt-3.5-turbo-0125\",\"system_fingerprint\":null,\"id\":\"chatcmpl-BZ0reXrZd8Jexf6QXqkPTMZEDvO9I\",\"service_tier\":\"default\"},\"run\":null,\"type\":\"LLMResult\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "XcKT3JflxDtOnd2QKCO9ug==",
+                    "spanId": "uSk2MMHafPE=",
+                    "name": "RunnableSequence",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747684502216512000",
+                    "endTimeUnixNano": "1747684503847335936",
+                    "attributes": [
+                      {
+                        "key": "langsmith.span.kind",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt",
+                        "value": {
+                          "stringValue": "{\"input\":\"How does photosynthesis work?\"}"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.id",
+                        "value": {
+                          "stringValue": "b57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.span.dotted_order",
+                        "value": {
+                          "stringValue": "20250519T195502216512Zb57ad1dc-aef9-43a2-8551-8155dabb2457"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.name",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "langsmith.trace.session_name",
+                        "value": {
+                          "stringValue": "my-project"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+                        "value": {
+                          "stringValue": "true"
+                        }
+                      },
+                      {
+                        "key": "langsmith.metadata.revision_id",
+                        "value": {
+                          "stringValue": "c9d0c60-dirty"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion",
+                        "value": {
+                          "stringValue": "{\"output\":\"Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose molecules. This process involves the absorption of sunlight by chlorophyll molecules in the chloroplasts of plant cells, which triggers a series of chemical reactions that ultimately produce glucose and oxygen as byproducts. The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\"}"
+                        }
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "Host": "127.0.0.1:4318",
+        "User-Agent": "OTel-OTLP-Exporter-Python/1.33.1",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "x-api-key": "dummy",
+        "langsmith-project": "my-project",
+        "Content-Type": "application/x-protobuf",
+        "Content-Length": "18952"
+      },
+      "test_elapsed_ms": 28703
+    }
+  ],
+  "log_requests": []
+}

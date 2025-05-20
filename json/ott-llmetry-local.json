@@ -1,0 +1,956 @@
+{
+  "metric_requests": [
+    {
+      "pbreq": {
+        "resourceMetrics": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.33.1"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.54b1"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeMetrics": [
+              {
+                "scope": {
+                  "name": "opentelemetry.instrumentation.langchain",
+                  "version": "0.40.5"
+                },
+                "metrics": [
+                  {
+                    "name": "gen_ai.client.token.usage",
+                    "description": "Measures number of input and output tokens used",
+                    "unit": "token",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747678409754264000",
+                          "timeUnixNano": "1747678411107502000",
+                          "count": "2",
+                          "sum": 77.0,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.0,
+                            5.0,
+                            10.0,
+                            25.0,
+                            50.0,
+                            75.0,
+                            100.0,
+                            250.0,
+                            500.0,
+                            750.0,
+                            1000.0,
+                            2500.0,
+                            5000.0,
+                            7500.0,
+                            10000.0
+                          ],
+                          "attributes": [
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "Langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.token.type",
+                              "value": {
+                                "stringValue": "input"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 38.0,
+                          "max": 39.0
+                        },
+                        {
+                          "startTimeUnixNano": "1747678409754297000",
+                          "timeUnixNano": "1747678411107502000",
+                          "count": "2",
+                          "sum": 132.0,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.0,
+                            5.0,
+                            10.0,
+                            25.0,
+                            50.0,
+                            75.0,
+                            100.0,
+                            250.0,
+                            500.0,
+                            750.0,
+                            1000.0,
+                            2500.0,
+                            5000.0,
+                            7500.0,
+                            10000.0
+                          ],
+                          "attributes": [
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "Langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.token.type",
+                              "value": {
+                                "stringValue": "output"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 7.0,
+                          "max": 125.0
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  },
+                  {
+                    "name": "gen_ai.client.operation.duration",
+                    "description": "GenAI operation duration",
+                    "unit": "s",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747678409754444000",
+                          "timeUnixNano": "1747678411107502000",
+                          "count": "2",
+                          "sum": 2.228102207183838,
+                          "bucketCounts": [
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.0,
+                            5.0,
+                            10.0,
+                            25.0,
+                            50.0,
+                            75.0,
+                            100.0,
+                            250.0,
+                            500.0,
+                            750.0,
+                            1000.0,
+                            2500.0,
+                            5000.0,
+                            7500.0,
+                            10000.0
+                          ],
+                          "attributes": [
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "Langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 0.8802471160888672,
+                          "max": 1.3478550910949707
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.71.0 grpc-c/46.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 30233
+    }
+  ],
+  "trace_requests": [
+    {
+      "pbreq": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.33.1"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.54b1"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "opentelemetry.instrumentation.langchain",
+                  "version": "0.40.5"
+                },
+                "spans": [
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "Gkums1WdMHc=",
+                    "parentSpanId": "6c9xeWCLg/c=",
+                    "name": "RunnablePassthrough.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678408873542000",
+                    "endTimeUnixNano": "1747678408873610000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_PATH",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnablePassthrough"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "6c9xeWCLg/c=",
+                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "name": "RunnableParallel<question>.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678408873295000",
+                    "endTimeUnixNano": "1747678408873674000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"seq:step:1\"], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableParallel<question>\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": {\"question\": \"What is the capital of France?\"}, \"kwargs\": {\"tags\": [\"seq:step:1\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "aMrao6iAFSE=",
+                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "name": "ChatPromptTemplate.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678408873850000",
+                    "endTimeUnixNano": "1747678408874003000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": {\"question\": \"What is the capital of France?\"}, \"tags\": [\"seq:step:2\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"prompt\", \"name\": \"ChatPromptTemplate\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"prompts\", \"chat\", \"ChatPromptValue\"], \"kwargs\": {\"messages\": [{\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"HumanMessage\"], \"kwargs\": {\"content\": \"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: What is the capital of France?\\n\\n    Please provide a helpful answer:\\n    \", \"type\": \"human\"}}]}}, \"kwargs\": {\"tags\": [\"seq:step:2\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "QEZ7rZ0cR14=",
+                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "name": "ChatOpenAI.chat",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747678408874169000",
+                    "endTimeUnixNano": "1747678409754359000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "Langchain"
+                        }
+                      },
+                      {
+                        "key": "llm.request.type",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt.0.role",
+                        "value": {
+                          "stringValue": "user"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt.0.content",
+                        "value": {
+                          "stringValue": "\n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: What is the capital of France?\n\n    Please provide a helpful answer:\n    "
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo-0125"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.id",
+                        "value": {
+                          "stringValue": "chatcmpl-BYzHNprPVP9wGrUHJFMIXjzmrO7dL"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion.0.content",
+                        "value": {
+                          "stringValue": "The capital of France is Paris."
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion.0.role",
+                        "value": {
+                          "stringValue": "assistant"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.prompt_tokens",
+                        "value": {
+                          "intValue": "39"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.completion_tokens",
+                        "value": {
+                          "intValue": "7"
+                        }
+                      },
+                      {
+                        "key": "llm.usage.total_tokens",
+                        "value": {
+                          "intValue": "46"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cache_read_input_tokens",
+                        "value": {
+                          "intValue": "0"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "5LYyl1gAaTU=",
+                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "name": "StrOutputParser.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678409755055000",
+                    "endTimeUnixNano": "1747678409755413000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "StrOutputParser"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"The capital of France is Paris.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 7, \"prompt_tokens\": 39, \"total_tokens\": 46, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BYzHNprPVP9wGrUHJFMIXjzmrO7dL\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--329e4661-84ee-478c-87f4-e1bfc8cc1618-0\", \"usage_metadata\": {\"input_tokens\": 39, \"output_tokens\": 7, \"total_tokens\": 46, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"The capital of France is Paris.\", \"kwargs\": {\"tags\": [\"seq:step:4\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
+                    "spanId": "Wb5WUmwp/xo=",
+                    "name": "RunnableSequence.workflow",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678408873183000",
+                    "endTimeUnixNano": "1747678409755458000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "workflow"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableSequence\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"The capital of France is Paris.\", \"kwargs\": {\"tags\": []}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "++Qmm+l0I58=",
+                    "parentSpanId": "VeSZDVOi314=",
+                    "name": "RunnablePassthrough.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678409756320000",
+                    "endTimeUnixNano": "1747678409756470000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_PATH",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnablePassthrough"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"How does photosynthesis work?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "VeSZDVOi314=",
+                    "parentSpanId": "z6qj/Guz+zM=",
+                    "name": "RunnableParallel<question>.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678409755872000",
+                    "endTimeUnixNano": "1747678409756612000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnableParallel<question>"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [\"seq:step:1\"], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableParallel<question>\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": {\"question\": \"How does photosynthesis work?\"}, \"kwargs\": {\"tags\": [\"seq:step:1\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "+DC3kBHNChM=",
+                    "parentSpanId": "z6qj/Guz+zM=",
+                    "name": "ChatPromptTemplate.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678409756809000",
+                    "endTimeUnixNano": "1747678409757167000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "ChatPromptTemplate"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": {\"question\": \"How does photosynthesis work?\"}, \"tags\": [\"seq:step:2\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"prompt\", \"name\": \"ChatPromptTemplate\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"prompts\", \"chat\", \"ChatPromptValue\"], \"kwargs\": {\"messages\": [{\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"HumanMessage\"], \"kwargs\": {\"content\": \"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: How does photosynthesis work?\\n\\n    Please provide a helpful answer:\\n    \", \"type\": \"human\"}}]}}, \"kwargs\": {\"tags\": [\"seq:step:2\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "61tazLNgeGc=",
+                    "parentSpanId": "z6qj/Guz+zM=",
+                    "name": "ChatOpenAI.chat",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747678409757398000",
+                    "endTimeUnixNano": "1747678411105210000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "Langchain"
+                        }
+                      },
+                      {
+                        "key": "llm.request.type",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt.0.role",
+                        "value": {
+                          "stringValue": "user"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.prompt.0.content",
+                        "value": {
+                          "stringValue": "\n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: How does photosynthesis work?\n\n    Please provide a helpful answer:\n    "
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo-0125"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.id",
+                        "value": {
+                          "stringValue": "chatcmpl-BYzHNOCmYAdhCoEzMjabO8PIEBe3J"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion.0.content",
+                        "value": {
+                          "stringValue": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere."
+                        }
+                      },
+                      {
+                        "key": "gen_ai.completion.0.role",
+                        "value": {
+                          "stringValue": "assistant"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.prompt_tokens",
+                        "value": {
+                          "intValue": "38"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.completion_tokens",
+                        "value": {
+                          "intValue": "125"
+                        }
+                      },
+                      {
+                        "key": "llm.usage.total_tokens",
+                        "value": {
+                          "intValue": "163"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cache_read_input_tokens",
+                        "value": {
+                          "intValue": "0"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "qH0xcpih0dM=",
+                    "parentSpanId": "z6qj/Guz+zM=",
+                    "name": "StrOutputParser.task",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678411105954000",
+                    "endTimeUnixNano": "1747678411106402000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "task"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "StrOutputParser"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 125, \"prompt_tokens\": 38, \"total_tokens\": 163, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BYzHNOCmYAdhCoEzMjabO8PIEBe3J\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--bd07a820-9bc8-4178-ab79-a65ff4164826-0\", \"usage_metadata\": {\"input_tokens\": 38, \"output_tokens\": 125, \"total_tokens\": 163, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"kwargs\": {\"tags\": [\"seq:step:4\"]}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
+                    "spanId": "z6qj/Guz+zM=",
+                    "name": "RunnableSequence.workflow",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1747678409755687000",
+                    "endTimeUnixNano": "1747678411106448000",
+                    "attributes": [
+                      {
+                        "key": "WORKFLOW_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "SPAN_KIND",
+                        "value": {
+                          "stringValue": "workflow"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_NAME",
+                        "value": {
+                          "stringValue": "RunnableSequence"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_INPUT",
+                        "value": {
+                          "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableSequence\"}}"
+                        }
+                      },
+                      {
+                        "key": "ENTITY_OUTPUT",
+                        "value": {
+                          "stringValue": "{\"outputs\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"kwargs\": {\"tags\": []}}"
+                        }
+                      }
+                    ],
+                    "status": {},
+                    "flags": 256
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.71.0 grpc-c/46.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 30236
+    }
+  ],
+  "log_requests": []
+}

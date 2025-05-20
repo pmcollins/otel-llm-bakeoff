@@ -1,0 +1,2237 @@
+{
+  "metric_requests": [
+    {
+      "pbreq": {
+        "resourceMetrics": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "openlit"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.33.0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "default"
+                  }
+                },
+                {
+                  "key": "deployment.environment",
+                  "value": {
+                    "stringValue": "default"
+                  }
+                }
+              ]
+            },
+            "scopeMetrics": [
+              {
+                "scope": {
+                  "name": "openlit.otel.metrics",
+                  "version": "0.1.0"
+                },
+                "metrics": [
+                  {
+                    "name": "gen_ai.client.token.usage",
+                    "description": "Measures number of input and output tokens used",
+                    "unit": "{token}",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244008862000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 194.0,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "1",
+                            "1",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            1.0,
+                            4.0,
+                            16.0,
+                            64.0,
+                            256.0,
+                            1024.0,
+                            4096.0,
+                            16384.0,
+                            65536.0,
+                            262144.0,
+                            1048576.0,
+                            4194304.0,
+                            16777216.0,
+                            67108864.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330244008715000",
+                              "spanId": "K1hO3xWK4TI=",
+                              "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+                              "asInt": "46"
+                            },
+                            {
+                              "timeUnixNano": "1747330245226707000",
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "148"
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 46.0,
+                          "max": 148.0
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009848000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 1319.0,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            1.0,
+                            4.0,
+                            16.0,
+                            64.0,
+                            256.0,
+                            1024.0,
+                            4096.0,
+                            16384.0,
+                            65536.0,
+                            262144.0,
+                            1048576.0,
+                            4194304.0,
+                            16777216.0,
+                            67108864.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227781000",
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "796"
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ],
+                          "min": 523.0,
+                          "max": 796.0
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  },
+                  {
+                    "name": "gen_ai.client.operation.duration",
+                    "description": "GenAI operation duration",
+                    "unit": "s",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244008923000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 2.3864264488220215,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.01,
+                            0.02,
+                            0.04,
+                            0.08,
+                            0.16,
+                            0.32,
+                            0.64,
+                            1.28,
+                            2.56,
+                            5.12,
+                            10.24,
+                            20.48,
+                            40.96,
+                            81.92
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245226837000",
+                              "asDouble": 1.2140982151031494,
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 1.172328233718872,
+                          "max": 1.2140982151031494
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009872000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 2.394606113433838,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.01,
+                            0.02,
+                            0.04,
+                            0.08,
+                            0.16,
+                            0.32,
+                            0.64,
+                            1.28,
+                            2.56,
+                            5.12,
+                            10.24,
+                            20.48,
+                            40.96,
+                            81.92
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227830000",
+                              "asDouble": 1.2156221866607666,
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ],
+                          "min": 1.1789839267730713,
+                          "max": 1.2156221866607666
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  },
+                  {
+                    "name": "gen_ai.server.time_to_first_token",
+                    "description": "Time to generate first token for successful responses",
+                    "unit": "s",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244008957000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 2.3864264488220215,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.001,
+                            0.005,
+                            0.01,
+                            0.02,
+                            0.04,
+                            0.06,
+                            0.08,
+                            0.1,
+                            0.25,
+                            0.5,
+                            0.75,
+                            1.0,
+                            2.5,
+                            5.0,
+                            7.5,
+                            10.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245226875000",
+                              "asDouble": 1.2140982151031494,
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 1.172328233718872,
+                          "max": 1.2140982151031494
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009890000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 2.394606113433838,
+                          "bucketCounts": [
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.001,
+                            0.005,
+                            0.01,
+                            0.02,
+                            0.04,
+                            0.06,
+                            0.08,
+                            0.1,
+                            0.25,
+                            0.5,
+                            0.75,
+                            1.0,
+                            2.5,
+                            5.0,
+                            7.5,
+                            10.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227854000",
+                              "asDouble": 1.2156221866607666,
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ],
+                          "min": 1.1789839267730713,
+                          "max": 1.2156221866607666
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  },
+                  {
+                    "name": "gen_ai.total.requests",
+                    "description": "Number of requests to GenAI",
+                    "unit": "1",
+                    "sum": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244008999000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245226909000",
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "1"
+                            }
+                          ],
+                          "asInt": "2",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009908000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330244009902000",
+                              "spanId": "PhwkOMkjUss=",
+                              "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+                              "asInt": "1"
+                            }
+                          ],
+                          "asInt": "2",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE",
+                      "isMonotonic": true
+                    }
+                  },
+                  {
+                    "name": "gen_ai.usage.output_tokens",
+                    "description": "Number of completion tokens processed.",
+                    "unit": "1",
+                    "sum": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244009043000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330244009028000",
+                              "spanId": "K1hO3xWK4TI=",
+                              "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+                              "asInt": "7"
+                            }
+                          ],
+                          "asInt": "117",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009934000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227903000",
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "673"
+                            }
+                          ],
+                          "asInt": "1072",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE",
+                      "isMonotonic": true
+                    }
+                  },
+                  {
+                    "name": "gen_ai.usage.input_tokens",
+                    "description": "Number of prompt tokens processed.",
+                    "unit": "1",
+                    "sum": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244009140000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245226983000",
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "38"
+                            }
+                          ],
+                          "asInt": "77",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009962000",
+                          "timeUnixNano": "1747330245229291000",
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227922000",
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                              "asInt": "123"
+                            }
+                          ],
+                          "asInt": "247",
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE",
+                      "isMonotonic": true
+                    }
+                  },
+                  {
+                    "name": "gen_ai.usage.cost",
+                    "description": "The distribution of GenAI request costs.",
+                    "unit": "USD",
+                    "histogram": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1747330244009167000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 0.000214,
+                          "bucketCounts": [
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.0,
+                            5.0,
+                            10.0,
+                            25.0,
+                            50.0,
+                            75.0,
+                            100.0,
+                            250.0,
+                            500.0,
+                            750.0,
+                            1000.0,
+                            2500.0,
+                            5000.0,
+                            7500.0,
+                            10000.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227006000",
+                              "asDouble": 0.000184,
+                              "spanId": "iFtin3dRCH4=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "openai"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "api.openai.com"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "intValue": "443"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo-0125"
+                              }
+                            }
+                          ],
+                          "min": 3e-05,
+                          "max": 0.000184
+                        },
+                        {
+                          "startTimeUnixNano": "1747330244009984000",
+                          "timeUnixNano": "1747330245229291000",
+                          "count": "2",
+                          "sum": 0.0017315,
+                          "bucketCounts": [
+                            "0",
+                            "2",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0",
+                            "0"
+                          ],
+                          "explicitBounds": [
+                            0.0,
+                            5.0,
+                            10.0,
+                            25.0,
+                            50.0,
+                            75.0,
+                            100.0,
+                            250.0,
+                            500.0,
+                            750.0,
+                            1000.0,
+                            2500.0,
+                            5000.0,
+                            7500.0,
+                            10000.0
+                          ],
+                          "exemplars": [
+                            {
+                              "timeUnixNano": "1747330245227941000",
+                              "asDouble": 0.001071,
+                              "spanId": "cqDys3pW8Ns=",
+                              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q=="
+                            }
+                          ],
+                          "attributes": [
+                            {
+                              "key": "telemetry.sdk.name",
+                              "value": {
+                                "stringValue": "openlit"
+                              }
+                            },
+                            {
+                              "key": "service.name",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "deployment.environment",
+                              "value": {
+                                "stringValue": "default"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.operation.name",
+                              "value": {
+                                "stringValue": "chat"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.system",
+                              "value": {
+                                "stringValue": "langchain"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.request.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            },
+                            {
+                              "key": "server.address",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "server.port",
+                              "value": {
+                                "stringValue": "NOT_FOUND"
+                              }
+                            },
+                            {
+                              "key": "gen_ai.response.model",
+                              "value": {
+                                "stringValue": "gpt-3.5-turbo"
+                              }
+                            }
+                          ],
+                          "min": 0.0006605000000000001,
+                          "max": 0.001071
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "Host": "127.0.0.1:4318",
+        "User-Agent": "OTel-OTLP-Exporter-Python/1.33.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "Content-Type": "application/x-protobuf",
+        "Content-Length": "8336"
+      },
+      "test_elapsed_ms": 6454
+    }
+  ],
+  "trace_requests": [
+    {
+      "pbreq": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "openlit"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.33.0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "default"
+                  }
+                },
+                {
+                  "key": "deployment.environment",
+                  "value": {
+                    "stringValue": "default"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "openlit.otel.tracing"
+                },
+                "spans": [
+                  {
+                    "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+                    "spanId": "K1hO3xWK4TI=",
+                    "parentSpanId": "PhwkOMkjUss=",
+                    "name": "chat gpt-3.5-turbo",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747330242830926000",
+                    "endTimeUnixNano": "1747330244009197000",
+                    "attributes": [
+                      {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                          "stringValue": "openlit"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.seed",
+                        "value": {
+                          "stringValue": ""
+                        }
+                      },
+                      {
+                        "key": "server.port",
+                        "value": {
+                          "intValue": "443"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.frequency_penalty",
+                        "value": {
+                          "doubleValue": 0.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.max_tokens",
+                        "value": {
+                          "intValue": "-1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.presence_penalty",
+                        "value": {
+                          "doubleValue": 0.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.stop_sequences",
+                        "value": {
+                          "arrayValue": {}
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.temperature",
+                        "value": {
+                          "doubleValue": 1.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_p",
+                        "value": {
+                          "doubleValue": 1.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.id",
+                        "value": {
+                          "stringValue": "chatcmpl-BXWhn3eOVSstuEh9tl4ohhMo75pX9"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo-0125"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "39"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "7"
+                        }
+                      },
+                      {
+                        "key": "server.address",
+                        "value": {
+                          "stringValue": "api.openai.com"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.service_tier",
+                        "value": {
+                          "stringValue": "auto"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.service_tier",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.system_fingerprint",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "deployment.environment",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "service.name",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.user",
+                        "value": {
+                          "stringValue": ""
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.is_stream",
+                        "value": {
+                          "boolValue": false
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "46"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cost",
+                        "value": {
+                          "doubleValue": 3e-05
+                        }
+                      },
+                      {
+                        "key": "gen_ai.server.time_to_first_token",
+                        "value": {
+                          "doubleValue": 1.172328233718872
+                        }
+                      },
+                      {
+                        "key": "gen_ai.sdk.version",
+                        "value": {
+                          "stringValue": "1.78.1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.finish_reasons",
+                        "value": {
+                          "arrayValue": {
+                            "values": [
+                              {
+                                "stringValue": "stop"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "key": "gen_ai.output.type",
+                        "value": {
+                          "stringValue": "text"
+                        }
+                      }
+                    ],
+                    "events": [
+                      {
+                        "timeUnixNano": "1747330244008622000",
+                        "name": "gen_ai.content.prompt",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.prompt",
+                            "value": {
+                              "stringValue": "user: \n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: What is the capital of France?\n\n    Please provide a helpful answer:\n    "
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "timeUnixNano": "1747330244008661000",
+                        "name": "gen_ai.content.completion",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.completion",
+                            "value": {
+                              "stringValue": "The capital of France is Paris."
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+                    "spanId": "PhwkOMkjUss=",
+                    "name": "chat gpt-3.5-turbo",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747330242830641000",
+                    "endTimeUnixNano": "1747330244010001000",
+                    "attributes": [
+                      {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                          "stringValue": "openlit"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.temperature",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_k",
+                        "value": {
+                          "stringValue": "1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_p",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "124"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "399"
+                        }
+                      },
+                      {
+                        "key": "server.address",
+                        "value": {
+                          "stringValue": "NOT_FOUND"
+                        }
+                      },
+                      {
+                        "key": "server.port",
+                        "value": {
+                          "stringValue": "NOT_FOUND"
+                        }
+                      },
+                      {
+                        "key": "deployment.environment",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "service.name",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.is_stream",
+                        "value": {
+                          "boolValue": false
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "523"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cost",
+                        "value": {
+                          "doubleValue": 0.0006605000000000001
+                        }
+                      },
+                      {
+                        "key": "gen_ai.server.time_to_first_token",
+                        "value": {
+                          "doubleValue": 1.1789839267730713
+                        }
+                      },
+                      {
+                        "key": "gen_ai.sdk.version",
+                        "value": {
+                          "stringValue": "0.3.25"
+                        }
+                      }
+                    ],
+                    "events": [
+                      {
+                        "timeUnixNano": "1747330244009819000",
+                        "name": "gen_ai.content.prompt",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.prompt",
+                            "value": {
+                              "stringValue": "messages=[HumanMessage(content='\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: What is the capital of France?\\n\\n    Please provide a helpful answer:\\n    ', additional_kwargs={}, response_metadata={})]"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "timeUnixNano": "1747330244009829000",
+                        "name": "gen_ai.content.completion",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.completion",
+                            "value": {
+                              "stringValue": "The capital of France is Paris."
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                    "spanId": "iFtin3dRCH4=",
+                    "parentSpanId": "cqDys3pW8Ns=",
+                    "name": "chat gpt-3.5-turbo",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747330244012160000",
+                    "endTimeUnixNano": "1747330245227052000",
+                    "attributes": [
+                      {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                          "stringValue": "openlit"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "openai"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.seed",
+                        "value": {
+                          "stringValue": ""
+                        }
+                      },
+                      {
+                        "key": "server.port",
+                        "value": {
+                          "intValue": "443"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.frequency_penalty",
+                        "value": {
+                          "doubleValue": 0.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.max_tokens",
+                        "value": {
+                          "intValue": "-1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.presence_penalty",
+                        "value": {
+                          "doubleValue": 0.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.stop_sequences",
+                        "value": {
+                          "arrayValue": {}
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.temperature",
+                        "value": {
+                          "doubleValue": 1.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_p",
+                        "value": {
+                          "doubleValue": 1.0
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.id",
+                        "value": {
+                          "stringValue": "chatcmpl-BXWho4kKK1WGk6dj5gNSAQeWbpYQ1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo-0125"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "38"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "110"
+                        }
+                      },
+                      {
+                        "key": "server.address",
+                        "value": {
+                          "stringValue": "api.openai.com"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.service_tier",
+                        "value": {
+                          "stringValue": "auto"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.service_tier",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.system_fingerprint",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "deployment.environment",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "service.name",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.user",
+                        "value": {
+                          "stringValue": ""
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.is_stream",
+                        "value": {
+                          "boolValue": false
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "148"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cost",
+                        "value": {
+                          "doubleValue": 0.000184
+                        }
+                      },
+                      {
+                        "key": "gen_ai.server.time_to_first_token",
+                        "value": {
+                          "doubleValue": 1.2140982151031494
+                        }
+                      },
+                      {
+                        "key": "gen_ai.sdk.version",
+                        "value": {
+                          "stringValue": "1.78.1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.finish_reasons",
+                        "value": {
+                          "arrayValue": {
+                            "values": [
+                              {
+                                "stringValue": "stop"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "key": "gen_ai.output.type",
+                        "value": {
+                          "stringValue": "text"
+                        }
+                      }
+                    ],
+                    "events": [
+                      {
+                        "timeUnixNano": "1747330245226623000",
+                        "name": "gen_ai.content.prompt",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.prompt",
+                            "value": {
+                              "stringValue": "user: \n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: How does photosynthesis work?\n\n    Please provide a helpful answer:\n    "
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "timeUnixNano": "1747330245226667000",
+                        "name": "gen_ai.content.completion",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.completion",
+                            "value": {
+                              "stringValue": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose (sugar) and oxygen. This process takes place in the chloroplasts of plant cells and involves two main stages: the light-dependent reactions, which require sunlight to produce energy in the form of ATP and NADPH, and the light-independent reactions (Calvin cycle), which use this energy to convert carbon dioxide into glucose. Overall, photosynthesis is essential for producing oxygen and providing energy for plant growth and metabolism."
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+                    "spanId": "cqDys3pW8Ns=",
+                    "name": "chat gpt-3.5-turbo",
+                    "kind": "SPAN_KIND_CLIENT",
+                    "startTimeUnixNano": "1747330244011822000",
+                    "endTimeUnixNano": "1747330245227974000",
+                    "attributes": [
+                      {
+                        "key": "telemetry.sdk.name",
+                        "value": {
+                          "stringValue": "openlit"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.operation.name",
+                        "value": {
+                          "stringValue": "chat"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.system",
+                        "value": {
+                          "stringValue": "langchain"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.response.model",
+                        "value": {
+                          "stringValue": "gpt-3.5-turbo"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.temperature",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_k",
+                        "value": {
+                          "stringValue": "1"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.top_p",
+                        "value": {
+                          "stringValue": "None"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.input_tokens",
+                        "value": {
+                          "intValue": "123"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.output_tokens",
+                        "value": {
+                          "intValue": "673"
+                        }
+                      },
+                      {
+                        "key": "server.address",
+                        "value": {
+                          "stringValue": "NOT_FOUND"
+                        }
+                      },
+                      {
+                        "key": "server.port",
+                        "value": {
+                          "stringValue": "NOT_FOUND"
+                        }
+                      },
+                      {
+                        "key": "deployment.environment",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "service.name",
+                        "value": {
+                          "stringValue": "default"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.request.is_stream",
+                        "value": {
+                          "boolValue": false
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.total_tokens",
+                        "value": {
+                          "intValue": "796"
+                        }
+                      },
+                      {
+                        "key": "gen_ai.usage.cost",
+                        "value": {
+                          "doubleValue": 0.001071
+                        }
+                      },
+                      {
+                        "key": "gen_ai.server.time_to_first_token",
+                        "value": {
+                          "doubleValue": 1.2156221866607666
+                        }
+                      },
+                      {
+                        "key": "gen_ai.sdk.version",
+                        "value": {
+                          "stringValue": "0.3.25"
+                        }
+                      }
+                    ],
+                    "events": [
+                      {
+                        "timeUnixNano": "1747330245227751000",
+                        "name": "gen_ai.content.prompt",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.prompt",
+                            "value": {
+                              "stringValue": "messages=[HumanMessage(content='\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: How does photosynthesis work?\\n\\n    Please provide a helpful answer:\\n    ', additional_kwargs={}, response_metadata={})]"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "timeUnixNano": "1747330245227765000",
+                        "name": "gen_ai.content.completion",
+                        "attributes": [
+                          {
+                            "key": "gen_ai.completion",
+                            "value": {
+                              "stringValue": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose (sugar) and oxygen. This process takes place in the chloroplasts of plant cells and involves two main stages: the light-dependent reactions, which require sunlight to produce energy in the form of ATP and NADPH, and the light-independent reactions (Calvin cycle), which use this energy to convert carbon dioxide into glucose. Overall, photosynthesis is essential for producing oxygen and providing energy for plant growth and metabolism."
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "status": {
+                      "code": "STATUS_CODE_OK"
+                    },
+                    "flags": 256
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "Host": "127.0.0.1:4318",
+        "User-Agent": "OTel-OTLP-Exporter-Python/1.33.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "Content-Type": "application/x-protobuf",
+        "Content-Length": "6600"
+      },
+      "test_elapsed_ms": 6459
+    }
+  ],
+  "log_requests": []
+}
