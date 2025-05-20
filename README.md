@@ -34,7 +34,7 @@ To run the example scripts and see their telemetry:
 * 🍥 Local copy of OpenLLMetry package(s)
     * Not many changes required to locally build a vendor-neutral package.
 * 🥮 LangSmith:
-    * Telemetry looks like OpenLLMetry's.
+    * Telemetry looks like OpenLLMetry's except instead of "traceloop" in attrubute names, you get "langsmith".
     * No metrics, just spans (the original OpenLLMetry instrumentor sends metrics + spans).
 * 🍰 OpenLit:
     * An observability platform, of which instrumentation is just a part.
