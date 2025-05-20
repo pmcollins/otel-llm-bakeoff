@@ -4,7 +4,7 @@ This repository compares four different approaches to instrumenting LangChain ap
 
 Each scenario runs the same LangChain application, but instrumented uniquely, defined and run via an
 [oteltest](https://github.com/pmcollins/oteltest) script. These scripts have been run and their output committed to the
-[json](json) directory.
+[output](output) directory.
 
 ## Instrumentation Approaches
 
