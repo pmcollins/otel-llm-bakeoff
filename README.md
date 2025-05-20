@@ -21,7 +21,7 @@ Each scenario runs the same LangChain application, but instrumented uniquely, de
 To run the example scripts and see their telemetry:
 
 1. `pip install oteltest`
-2. `oteltest ott-example-name.py`
+2. `oteltest ott-something.py`
 3. Check the `json/` directory for telemetry output
 
 ## Observations
