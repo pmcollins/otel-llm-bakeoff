@@ -8,10 +8,10 @@ Each scenario runs the same LangChain application, but is instrumented in a uniq
 
 ## Instrumentation Approaches
 
-1. **LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): LangSmith is LangChain's included observability tooling, which appears to be derived from OpenLLMetry's instrumentor.
-2. **OpenLit** ([`ott-lit.py`](ott-lit.py)): OpenLit is an observability platform and instrumentation library for LLM applications.
-3. **OpenLLMetry** ([`ott-llmetry.py`](ott-llmetry.py)): OpenLLMetry is an OpenTelemetry instrumentation library for LLM applications.
-4. **OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): OpenLLMetry contains vendor-specific naming; this repo has a local copy that uses vendor-neutral names.
+- **LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): LangSmith is LangChain's included observability tooling, which appears to be derived from OpenLLMetry's instrumentor.
+- **OpenLit** ([`ott-lit.py`](ott-lit.py)): OpenLit is an observability platform and instrumentation library for LLM applications.
+- **OpenLLMetry** ([`ott-llmetry.py`](ott-llmetry.py)): OpenLLMetry is an OpenTelemetry instrumentation library for LLM applications.
+- **OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): OpenLLMetry contains vendor-specific naming; this repo has a local copy that uses vendor-neutral names.
 
 ## Operation
 
