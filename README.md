@@ -206,7 +206,9 @@ Example span:
     "flags": 256
   }
 ```
-## 🍰 OpenLit 
+## 🍰 OpenLit
+
+Example span:
 
 ```json
 {
