@@ -43,9 +43,9 @@ To run the example scripts and see their telemetry:
 
 ## Output
 
-### LangSmith
+### 🥮 LangSmith
 
-Example LangSmith span:
+Example span:
 
 ```json
 {
