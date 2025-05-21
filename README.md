@@ -2,7 +2,7 @@
 
 This repository compares four different approaches to instrumenting LangChain applications.
 
-Each scenario runs the same LangChain application, but instrumented uniquely, defined and run via an
+Each scenario runs the same LangChain application, but each is instrumented uniquely, and is run via an
 [oteltest](https://github.com/pmcollins/oteltest) script. These scripts have been run and their output committed to the
 [output](output) directory.
 
@@ -40,3 +40,31 @@ To run the example scripts and see their telemetry:
     * OpenLit's packaging is monolithic, so if you `pip install openlit` you get several instrumentors and capabilities
       that are not relevant.
     * Emits vendor-neutral telemetry.
+
+## Output
+
+## Config File Contents
+
+Below is the content of `config.json` in a scrollable box:
+
+```json
+{
+  "name": "My Project",
+  "version": "1.0.0",
+  "settings": {
+    "theme": "dark",
+    "debug": true,
+    "ports": [3000, 8080]
+  },
+  "data": [
+    "item1",
+    "item2",
+    "item3",
+    "item4",
+    "item5",
+    "item6",
+    "item7",
+    "item8"
+  ]
+}
+```
