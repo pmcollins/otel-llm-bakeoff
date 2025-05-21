@@ -45,7 +45,7 @@ To run the example scripts and see their telemetry:
 
 ### 🧁 OpenLLMetry
 
-Example span:
+Sample span:
 
 ```json
 {
@@ -101,7 +101,7 @@ Example span:
 
 ### 🍥 OpenLLMetry Local
 
-Example span:
+Sample span:
 
 ```json
 {
@@ -157,7 +157,7 @@ Example span:
 
 ### 🥮 LangSmith
 
-Example span:
+Sample span:
 
 ```json
 {
@@ -262,7 +262,7 @@ Example span:
 ```
 ## 🍰 OpenLit
 
-Example span:
+Sample span:
 
 ```json
 {
