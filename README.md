@@ -105,46 +105,46 @@ Example span:
 
 ```json
 {
-  "traceId": "e53R2v4FvpQxK0VphaF63w==",
-  "spanId": "Gkums1WdMHc=",
-  "parentSpanId": "6c9xeWCLg/c=",
+  "traceId": "0hFubDClFMKaFe7TefxQOw==",
+  "spanId": "xP/WJYvWM6A=",
+  "parentSpanId": "/N6Yu4yu1oo=",
   "name": "RunnablePassthrough.task",
   "kind": "SPAN_KIND_INTERNAL",
-  "startTimeUnixNano": "1747678408873542000",
-  "endTimeUnixNano": "1747678408873610000",
+  "startTimeUnixNano": "1747789955167983000",
+  "endTimeUnixNano": "1747789955168048000",
   "attributes": [
     {
-      "key": "WORKFLOW_NAME",
+      "key": "workflow.name",
       "value": {
         "stringValue": "RunnableSequence"
       }
     },
     {
-      "key": "ENTITY_PATH",
+      "key": "entity.path",
       "value": {
         "stringValue": "RunnableParallel<question>"
       }
     },
     {
-      "key": "SPAN_KIND",
+      "key": "span.kind",
       "value": {
         "stringValue": "task"
       }
     },
     {
-      "key": "ENTITY_NAME",
+      "key": "entity.name",
       "value": {
         "stringValue": "RunnablePassthrough"
       }
     },
     {
-      "key": "ENTITY_INPUT",
+      "key": "entity.input",
       "value": {
         "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
       }
     },
     {
-      "key": "ENTITY_OUTPUT",
+      "key": "entity.output",
       "value": {
         "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
       }
