@@ -2,7 +2,7 @@
 
 This repository compares four different approaches to instrumenting LangChain applications.
 
-Each scenario runs the same LangChain application, but instrumented uniquely, defined and run via an
+Each scenario runs the same LangChain application, but each is instrumented uniquely, and is run via an
 [oteltest](https://github.com/pmcollins/oteltest) script. These scripts have been run and their output committed to the
 [output](output) directory.
 
@@ -40,3 +40,456 @@ To run the example scripts and see their telemetry:
     * OpenLit's packaging is monolithic, so if you `pip install openlit` you get several instrumentors and capabilities
       that are not relevant.
     * Emits vendor-neutral telemetry.
+
+## Output
+
+### 🧁 OpenLLMetry
+
+Example span:
+
+```json
+{
+  "traceId": "UAEa7zQbWN3G5seMm+30vw==",
+  "spanId": "s8ogRN9WGAE=",
+  "parentSpanId": "TfiyaMOi9AE=",
+  "name": "RunnablePassthrough.task",
+  "kind": "SPAN_KIND_INTERNAL",
+  "startTimeUnixNano": "1747678317904876000",
+  "endTimeUnixNano": "1747678317904942000",
+  "attributes": [
+    {
+      "key": "traceloop.workflow.name",
+      "value": {
+        "stringValue": "RunnableSequence"
+      }
+    },
+    {
+      "key": "traceloop.entity.path",
+      "value": {
+        "stringValue": "RunnableParallel<question>"
+      }
+    },
+    {
+      "key": "traceloop.span.kind",
+      "value": {
+        "stringValue": "task"
+      }
+    },
+    {
+      "key": "traceloop.entity.name",
+      "value": {
+        "stringValue": "RunnablePassthrough"
+      }
+    },
+    {
+      "key": "traceloop.entity.input",
+      "value": {
+        "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
+      }
+    },
+    {
+      "key": "traceloop.entity.output",
+      "value": {
+        "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
+      }
+    }
+  ],
+  "status": {},
+  "flags": 256
+}
+```
+
+### 🍥 OpenLLMetry Local
+
+Example span:
+
+```json
+{
+  "traceId": "e53R2v4FvpQxK0VphaF63w==",
+  "spanId": "Gkums1WdMHc=",
+  "parentSpanId": "6c9xeWCLg/c=",
+  "name": "RunnablePassthrough.task",
+  "kind": "SPAN_KIND_INTERNAL",
+  "startTimeUnixNano": "1747678408873542000",
+  "endTimeUnixNano": "1747678408873610000",
+  "attributes": [
+    {
+      "key": "WORKFLOW_NAME",
+      "value": {
+        "stringValue": "RunnableSequence"
+      }
+    },
+    {
+      "key": "ENTITY_PATH",
+      "value": {
+        "stringValue": "RunnableParallel<question>"
+      }
+    },
+    {
+      "key": "SPAN_KIND",
+      "value": {
+        "stringValue": "task"
+      }
+    },
+    {
+      "key": "ENTITY_NAME",
+      "value": {
+        "stringValue": "RunnablePassthrough"
+      }
+    },
+    {
+      "key": "ENTITY_INPUT",
+      "value": {
+        "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
+      }
+    },
+    {
+      "key": "ENTITY_OUTPUT",
+      "value": {
+        "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
+      }
+    }
+  ],
+  "status": {},
+  "flags": 256
+}
+```
+
+### 🥮 LangSmith
+
+Example span:
+
+```json
+{
+    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+    "spanId": "1nksWusGpbY=",
+    "parentSpanId": "7gtSEbKGKfk=",
+    "name": "RunnableParallel<question>",
+    "kind": "SPAN_KIND_INTERNAL",
+    "startTimeUnixNano": "1747684501221924096",
+    "endTimeUnixNano": "1747684501222807040",
+    "attributes": [
+      {
+        "key": "langsmith.span.id",
+        "value": {
+          "stringValue": "9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+        }
+      },
+      {
+        "key": "langsmith.trace.id",
+        "value": {
+          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+        }
+      },
+      {
+        "key": "langsmith.span.dotted_order",
+        "value": {
+          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501221924Z9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+        }
+      },
+      {
+        "key": "langsmith.span.parent_id",
+        "value": {
+          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+        }
+      },
+      {
+        "key": "langsmith.span.kind",
+        "value": {
+          "stringValue": "chain"
+        }
+      },
+      {
+        "key": "langsmith.trace.name",
+        "value": {
+          "stringValue": "RunnableParallel<question>"
+        }
+      },
+      {
+        "key": "langsmith.trace.session_name",
+        "value": {
+          "stringValue": "my-project"
+        }
+      },
+      {
+        "key": "gen_ai.operation.name",
+        "value": {
+          "stringValue": "chain"
+        }
+      },
+      {
+        "key": "gen_ai.system",
+        "value": {
+          "stringValue": "langchain"
+        }
+      },
+      {
+        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+        "value": {
+          "stringValue": "true"
+        }
+      },
+      {
+        "key": "langsmith.metadata.revision_id",
+        "value": {
+          "stringValue": "c9d0c60-dirty"
+        }
+      },
+      {
+        "key": "langsmith.span.tags",
+        "value": {
+          "stringValue": "seq:step:1"
+        }
+      },
+      {
+        "key": "gen_ai.prompt",
+        "value": {
+          "stringValue": "{\"input\":\"What is the capital of France?\"}"
+        }
+      },
+      {
+        "key": "gen_ai.completion",
+        "value": {
+          "stringValue": "{\"question\":\"What is the capital of France?\"}"
+        }
+      }
+    ],
+    "status": {
+      "code": "STATUS_CODE_OK"
+    },
+    "flags": 256
+  }
+```
+## 🍰 OpenLit
+
+Example span:
+
+```json
+{
+  "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+  "spanId": "K1hO3xWK4TI=",
+  "parentSpanId": "PhwkOMkjUss=",
+  "name": "chat gpt-3.5-turbo",
+  "kind": "SPAN_KIND_CLIENT",
+  "startTimeUnixNano": "1747330242830926000",
+  "endTimeUnixNano": "1747330244009197000",
+  "attributes": [
+    {
+      "key": "telemetry.sdk.name",
+      "value": {
+        "stringValue": "openlit"
+      }
+    },
+    {
+      "key": "gen_ai.operation.name",
+      "value": {
+        "stringValue": "chat"
+      }
+    },
+    {
+      "key": "gen_ai.system",
+      "value": {
+        "stringValue": "openai"
+      }
+    },
+    {
+      "key": "gen_ai.request.model",
+      "value": {
+        "stringValue": "gpt-3.5-turbo"
+      }
+    },
+    {
+      "key": "gen_ai.request.seed",
+      "value": {
+        "stringValue": ""
+      }
+    },
+    {
+      "key": "server.port",
+      "value": {
+        "intValue": "443"
+      }
+    },
+    {
+      "key": "gen_ai.request.frequency_penalty",
+      "value": {
+        "doubleValue": 0.0
+      }
+    },
+    {
+      "key": "gen_ai.request.max_tokens",
+      "value": {
+        "intValue": "-1"
+      }
+    },
+    {
+      "key": "gen_ai.request.presence_penalty",
+      "value": {
+        "doubleValue": 0.0
+      }
+    },
+    {
+      "key": "gen_ai.request.stop_sequences",
+      "value": {
+        "arrayValue": {}
+      }
+    },
+    {
+      "key": "gen_ai.request.temperature",
+      "value": {
+        "doubleValue": 1.0
+      }
+    },
+    {
+      "key": "gen_ai.request.top_p",
+      "value": {
+        "doubleValue": 1.0
+      }
+    },
+    {
+      "key": "gen_ai.response.id",
+      "value": {
+        "stringValue": "chatcmpl-BXWhn3eOVSstuEh9tl4ohhMo75pX9"
+      }
+    },
+    {
+      "key": "gen_ai.response.model",
+      "value": {
+        "stringValue": "gpt-3.5-turbo-0125"
+      }
+    },
+    {
+      "key": "gen_ai.usage.input_tokens",
+      "value": {
+        "intValue": "39"
+      }
+    },
+    {
+      "key": "gen_ai.usage.output_tokens",
+      "value": {
+        "intValue": "7"
+      }
+    },
+    {
+      "key": "server.address",
+      "value": {
+        "stringValue": "api.openai.com"
+      }
+    },
+    {
+      "key": "gen_ai.request.service_tier",
+      "value": {
+        "stringValue": "auto"
+      }
+    },
+    {
+      "key": "gen_ai.response.service_tier",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "gen_ai.response.system_fingerprint",
+      "value": {
+        "stringValue": "None"
+      }
+    },
+    {
+      "key": "deployment.environment",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "service.name",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "gen_ai.request.user",
+      "value": {
+        "stringValue": ""
+      }
+    },
+    {
+      "key": "gen_ai.request.is_stream",
+      "value": {
+        "boolValue": false
+      }
+    },
+    {
+      "key": "gen_ai.usage.total_tokens",
+      "value": {
+        "intValue": "46"
+      }
+    },
+    {
+      "key": "gen_ai.usage.cost",
+      "value": {
+        "doubleValue": 3e-05
+      }
+    },
+    {
+      "key": "gen_ai.server.time_to_first_token",
+      "value": {
+        "doubleValue": 1.172328233718872
+      }
+    },
+    {
+      "key": "gen_ai.sdk.version",
+      "value": {
+        "stringValue": "1.78.1"
+      }
+    },
+    {
+      "key": "gen_ai.response.finish_reasons",
+      "value": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "stop"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "gen_ai.output.type",
+      "value": {
+        "stringValue": "text"
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeUnixNano": "1747330244008622000",
+      "name": "gen_ai.content.prompt",
+      "attributes": [
+        {
+          "key": "gen_ai.prompt",
+          "value": {
+            "stringValue": "user: \n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: What is the capital of France?\n\n    Please provide a helpful answer:\n    "
+          }
+        }
+      ]
+    },
+    {
+      "timeUnixNano": "1747330244008661000",
+      "name": "gen_ai.content.completion",
+      "attributes": [
+        {
+          "key": "gen_ai.completion",
+          "value": {
+            "stringValue": "The capital of France is Paris."
+          }
+        }
+      ]
+    }
+  ],
+  "status": {
+    "code": "STATUS_CODE_OK"
+  },
+  "flags": 256
+}
+```
