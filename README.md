@@ -48,18 +48,18 @@ To run the example scripts and see their telemetry:
 #### Spans
 
 Span Names:
-RunnablePassthrough.task
-RunnableParallel<question>
-ChatPromptTemplate
-ChatOpenAI
-StrOutputParser
-RunnableSequence
-RunnablePassthrough
-RunnableParallel
-ChatPRomptTemplate
-ChatOpenAI
-StrOutputParer
-RunnableSequence
+- RunnablePassthrough.task
+- RunnableParallel<question>
+- ChatPromptTemplate
+- ChatOpenAI
+- StrOutputParser
+- RunnableSequence
+- RunnablePassthrough
+- RunnableParallel
+- ChatPRomptTemplate
+- ChatOpenAI
+- StrOutputParer
+- RunnableSequence
 
 <details>
 <summary>Sample span: RunnablePassthrough.task</summary>
@@ -115,6 +115,7 @@ RunnableSequence
   "flags": 256
 }
 ```
+
 </details> 
 
 #### Metrics
@@ -413,6 +414,7 @@ RunnableSequence
   "flags": 256
 }
 ```
+
 </details>
 
 ### 🥮 LangSmith
@@ -422,113 +424,115 @@ RunnableSequence
 
 ```json
 {
-    "traceId": "5xihIcWNcs40zrIOoEF0uw==",
-    "spanId": "1nksWusGpbY=",
-    "parentSpanId": "7gtSEbKGKfk=",
-    "name": "RunnableParallel<question>",
-    "kind": "SPAN_KIND_INTERNAL",
-    "startTimeUnixNano": "1747684501221924096",
-    "endTimeUnixNano": "1747684501222807040",
-    "attributes": [
-      {
-        "key": "langsmith.span.id",
-        "value": {
-          "stringValue": "9067e67a-c5da-4fd8-8d7d-16f34edd564c"
-        }
-      },
-      {
-        "key": "langsmith.trace.id",
-        "value": {
-          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
-        }
-      },
-      {
-        "key": "langsmith.span.dotted_order",
-        "value": {
-          "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501221924Z9067e67a-c5da-4fd8-8d7d-16f34edd564c"
-        }
-      },
-      {
-        "key": "langsmith.span.parent_id",
-        "value": {
-          "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
-        }
-      },
-      {
-        "key": "langsmith.span.kind",
-        "value": {
-          "stringValue": "chain"
-        }
-      },
-      {
-        "key": "langsmith.trace.name",
-        "value": {
-          "stringValue": "RunnableParallel<question>"
-        }
-      },
-      {
-        "key": "langsmith.trace.session_name",
-        "value": {
-          "stringValue": "my-project"
-        }
-      },
-      {
-        "key": "gen_ai.operation.name",
-        "value": {
-          "stringValue": "chain"
-        }
-      },
-      {
-        "key": "gen_ai.system",
-        "value": {
-          "stringValue": "langchain"
-        }
-      },
-      {
-        "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
-        "value": {
-          "stringValue": "true"
-        }
-      },
-      {
-        "key": "langsmith.metadata.revision_id",
-        "value": {
-          "stringValue": "c9d0c60-dirty"
-        }
-      },
-      {
-        "key": "langsmith.span.tags",
-        "value": {
-          "stringValue": "seq:step:1"
-        }
-      },
-      {
-        "key": "gen_ai.prompt",
-        "value": {
-          "stringValue": "{\"input\":\"What is the capital of France?\"}"
-        }
-      },
-      {
-        "key": "gen_ai.completion",
-        "value": {
-          "stringValue": "{\"question\":\"What is the capital of France?\"}"
-        }
+  "traceId": "5xihIcWNcs40zrIOoEF0uw==",
+  "spanId": "1nksWusGpbY=",
+  "parentSpanId": "7gtSEbKGKfk=",
+  "name": "RunnableParallel<question>",
+  "kind": "SPAN_KIND_INTERNAL",
+  "startTimeUnixNano": "1747684501221924096",
+  "endTimeUnixNano": "1747684501222807040",
+  "attributes": [
+    {
+      "key": "langsmith.span.id",
+      "value": {
+        "stringValue": "9067e67a-c5da-4fd8-8d7d-16f34edd564c"
       }
-    ],
-    "status": {
-      "code": "STATUS_CODE_OK"
     },
-    "flags": 256
-  }
+    {
+      "key": "langsmith.trace.id",
+      "value": {
+        "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+      }
+    },
+    {
+      "key": "langsmith.span.dotted_order",
+      "value": {
+        "stringValue": "20250519T195501187802Zf1c6cfef-6341-4369-a3af-e720eb6579ef.20250519T195501221924Z9067e67a-c5da-4fd8-8d7d-16f34edd564c"
+      }
+    },
+    {
+      "key": "langsmith.span.parent_id",
+      "value": {
+        "stringValue": "f1c6cfef-6341-4369-a3af-e720eb6579ef"
+      }
+    },
+    {
+      "key": "langsmith.span.kind",
+      "value": {
+        "stringValue": "chain"
+      }
+    },
+    {
+      "key": "langsmith.trace.name",
+      "value": {
+        "stringValue": "RunnableParallel<question>"
+      }
+    },
+    {
+      "key": "langsmith.trace.session_name",
+      "value": {
+        "stringValue": "my-project"
+      }
+    },
+    {
+      "key": "gen_ai.operation.name",
+      "value": {
+        "stringValue": "chain"
+      }
+    },
+    {
+      "key": "gen_ai.system",
+      "value": {
+        "stringValue": "langchain"
+      }
+    },
+    {
+      "key": "langsmith.metadata.LANGSMITH_OTEL_ENABLED",
+      "value": {
+        "stringValue": "true"
+      }
+    },
+    {
+      "key": "langsmith.metadata.revision_id",
+      "value": {
+        "stringValue": "c9d0c60-dirty"
+      }
+    },
+    {
+      "key": "langsmith.span.tags",
+      "value": {
+        "stringValue": "seq:step:1"
+      }
+    },
+    {
+      "key": "gen_ai.prompt",
+      "value": {
+        "stringValue": "{\"input\":\"What is the capital of France?\"}"
+      }
+    },
+    {
+      "key": "gen_ai.completion",
+      "value": {
+        "stringValue": "{\"question\":\"What is the capital of France?\"}"
+      }
+    }
+  ],
+  "status": {
+    "code": "STATUS_CODE_OK"
+  },
+  "flags": 256
+}
 ```
+
 </details>
 
 ### 🍰 OpenLit
 
 <details>
 <summary>Sample span</summary>
+
 ```json
-{
+                  {
   "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
   "spanId": "K1hO3xWK4TI=",
   "parentSpanId": "PhwkOMkjUss=",
@@ -756,4 +760,5 @@ RunnableSequence
   "flags": 256
 }
 ```
+
 </details>
