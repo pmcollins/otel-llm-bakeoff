@@ -45,8 +45,24 @@ To run the example scripts and see their telemetry:
 
 ### 🧁 OpenLLMetry
 
+#### Spans
+
+Span Names:
+RunnablePassthrough.task
+RunnableParallel<question>
+ChatPromptTemplate
+ChatOpenAI
+StrOutputParser
+RunnableSequence
+RunnablePassthrough
+RunnableParallel
+ChatPRomptTemplate
+ChatOpenAI
+StrOutputParer
+RunnableSequence
+
 <details>
-<summary>Sample span</summary>
+<summary>Sample span: RunnablePassthrough.task</summary>
 
 ```json
 {
