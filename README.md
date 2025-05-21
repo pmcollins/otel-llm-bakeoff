@@ -2,9 +2,7 @@
 
 This repository compares four different approaches to instrumenting LangChain applications.
 
-Each scenario runs the same LangChain application, but each is instrumented uniquely, and is run via an
-[oteltest](https://github.com/pmcollins/oteltest) script. These scripts have been run and their output committed to the
-[output](output) directory.
+Each scenario runs the same LangChain application, instrumented differently and executed with an [oteltest](https://github.com/pmcollins/oteltest) script. The output from these runs is committed to the [output](output) directory.
 
 ## Instrumentation Approaches
 
@@ -28,7 +26,7 @@ To run the example scripts and see their telemetry:
 
 * 🧁 OpenLLMetry
     * Repo uses modular packaging, so you can `pip install opentelemetry-instrumentation-langchain` separately.
-    * Emits telemetry with attribute keys containing the word "traceloop".
+    * Emits telemetry with attribute keys containing the word "traceloop"
     * OpenLLMetry has claimed the package names of upstream OTel.
 * 🍥 Local copy of OpenLLMetry package(s)
     * Not many changes required to locally build a vendor-neutral package.
@@ -43,11 +41,15 @@ To run the example scripts and see their telemetry:
 
 ## Output
 
+The following is a summary of the telemetry emitted from the four instrumentation approaches while running the LangChain
+example.
+
 ### 🧁 OpenLLMetry
 
 #### Spans
 
 Span Names:
+
 - RunnablePassthrough.task
 - RunnableParallel<question>
 - ChatPromptTemplate
@@ -133,232 +135,233 @@ Span Names:
 
 ```json
   {
-    "name": "gen_ai.client.token.usage",
-    "description": "Measures number of input and output tokens used",
-    "unit": "{token}",
-    "histogram": {
-      "dataPoints": [
-        {
-          "startTimeUnixNano": "1747330244008862000",
-          "timeUnixNano": "1747330245229291000",
-          "count": "2",
-          "sum": 194.0,
-          "bucketCounts": [
-            "0",
-            "0",
-            "0",
-            "1",
-            "1",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ],
-          "explicitBounds": [
-            1.0,
-            4.0,
-            16.0,
-            64.0,
-            256.0,
-            1024.0,
-            4096.0,
-            16384.0,
-            65536.0,
-            262144.0,
-            1048576.0,
-            4194304.0,
-            16777216.0,
-            67108864.0
-          ],
-          "exemplars": [
-            {
-              "timeUnixNano": "1747330244008715000",
-              "spanId": "K1hO3xWK4TI=",
-              "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
-              "asInt": "46"
-            },
-            {
-              "timeUnixNano": "1747330245226707000",
-              "spanId": "iFtin3dRCH4=",
-              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
-              "asInt": "148"
+  "name": "gen_ai.client.token.usage",
+  "description": "Measures number of input and output tokens used",
+  "unit": "{token}",
+  "histogram": {
+    "dataPoints": [
+      {
+        "startTimeUnixNano": "1747330244008862000",
+        "timeUnixNano": "1747330245229291000",
+        "count": "2",
+        "sum": 194.0,
+        "bucketCounts": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "explicitBounds": [
+          1.0,
+          4.0,
+          16.0,
+          64.0,
+          256.0,
+          1024.0,
+          4096.0,
+          16384.0,
+          65536.0,
+          262144.0,
+          1048576.0,
+          4194304.0,
+          16777216.0,
+          67108864.0
+        ],
+        "exemplars": [
+          {
+            "timeUnixNano": "1747330244008715000",
+            "spanId": "K1hO3xWK4TI=",
+            "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+            "asInt": "46"
+          },
+          {
+            "timeUnixNano": "1747330245226707000",
+            "spanId": "iFtin3dRCH4=",
+            "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+            "asInt": "148"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "openlit"
             }
-          ],
-          "attributes": [
-            {
-              "key": "telemetry.sdk.name",
-              "value": {
-                "stringValue": "openlit"
-              }
-            },
-            {
-              "key": "service.name",
-              "value": {
-                "stringValue": "default"
-              }
-            },
-            {
-              "key": "deployment.environment",
-              "value": {
-                "stringValue": "default"
-              }
-            },
-            {
-              "key": "gen_ai.operation.name",
-              "value": {
-                "stringValue": "chat"
-              }
-            },
-            {
-              "key": "gen_ai.system",
-              "value": {
-                "stringValue": "openai"
-              }
-            },
-            {
-              "key": "gen_ai.request.model",
-              "value": {
-                "stringValue": "gpt-3.5-turbo"
-              }
-            },
-            {
-              "key": "server.address",
-              "value": {
-                "stringValue": "api.openai.com"
-              }
-            },
-            {
-              "key": "server.port",
-              "value": {
-                "intValue": "443"
-              }
-            },
-            {
-              "key": "gen_ai.response.model",
-              "value": {
-                "stringValue": "gpt-3.5-turbo-0125"
-              }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "default"
             }
-          ],
-          "min": 46.0,
-          "max": 148.0
-        },
-        {
-          "startTimeUnixNano": "1747330244009848000",
-          "timeUnixNano": "1747330245229291000",
-          "count": "2",
-          "sum": 1319.0,
-          "bucketCounts": [
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "2",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ],
-          "explicitBounds": [
-            1.0,
-            4.0,
-            16.0,
-            64.0,
-            256.0,
-            1024.0,
-            4096.0,
-            16384.0,
-            65536.0,
-            262144.0,
-            1048576.0,
-            4194304.0,
-            16777216.0,
-            67108864.0
-          ],
-          "exemplars": [
-            {
-              "timeUnixNano": "1747330245227781000",
-              "spanId": "cqDys3pW8Ns=",
-              "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
-              "asInt": "796"
+          },
+          {
+            "key": "deployment.environment",
+            "value": {
+              "stringValue": "default"
             }
-          ],
-          "attributes": [
-            {
-              "key": "telemetry.sdk.name",
-              "value": {
-                "stringValue": "openlit"
-              }
-            },
-            {
-              "key": "service.name",
-              "value": {
-                "stringValue": "default"
-              }
-            },
-            {
-              "key": "deployment.environment",
-              "value": {
-                "stringValue": "default"
-              }
-            },
-            {
-              "key": "gen_ai.operation.name",
-              "value": {
-                "stringValue": "chat"
-              }
-            },
-            {
-              "key": "gen_ai.system",
-              "value": {
-                "stringValue": "langchain"
-              }
-            },
-            {
-              "key": "gen_ai.request.model",
-              "value": {
-                "stringValue": "gpt-3.5-turbo"
-              }
-            },
-            {
-              "key": "server.address",
-              "value": {
-                "stringValue": "NOT_FOUND"
-              }
-            },
-            {
-              "key": "server.port",
-              "value": {
-                "stringValue": "NOT_FOUND"
-              }
-            },
-            {
-              "key": "gen_ai.response.model",
-              "value": {
-                "stringValue": "gpt-3.5-turbo"
-              }
+          },
+          {
+            "key": "gen_ai.operation.name",
+            "value": {
+              "stringValue": "chat"
             }
-          ],
-          "min": 523.0,
-          "max": 796.0
-        }
-      ],
-      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
-    }
+          },
+          {
+            "key": "gen_ai.system",
+            "value": {
+              "stringValue": "openai"
+            }
+          },
+          {
+            "key": "gen_ai.request.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo"
+            }
+          },
+          {
+            "key": "server.address",
+            "value": {
+              "stringValue": "api.openai.com"
+            }
+          },
+          {
+            "key": "server.port",
+            "value": {
+              "intValue": "443"
+            }
+          },
+          {
+            "key": "gen_ai.response.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo-0125"
+            }
+          }
+        ],
+        "min": 46.0,
+        "max": 148.0
+      },
+      {
+        "startTimeUnixNano": "1747330244009848000",
+        "timeUnixNano": "1747330245229291000",
+        "count": "2",
+        "sum": 1319.0,
+        "bucketCounts": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "explicitBounds": [
+          1.0,
+          4.0,
+          16.0,
+          64.0,
+          256.0,
+          1024.0,
+          4096.0,
+          16384.0,
+          65536.0,
+          262144.0,
+          1048576.0,
+          4194304.0,
+          16777216.0,
+          67108864.0
+        ],
+        "exemplars": [
+          {
+            "timeUnixNano": "1747330245227781000",
+            "spanId": "cqDys3pW8Ns=",
+            "traceId": "S9tVSDK3f2pVLj+SBSsi4Q==",
+            "asInt": "796"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "openlit"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "default"
+            }
+          },
+          {
+            "key": "deployment.environment",
+            "value": {
+              "stringValue": "default"
+            }
+          },
+          {
+            "key": "gen_ai.operation.name",
+            "value": {
+              "stringValue": "chat"
+            }
+          },
+          {
+            "key": "gen_ai.system",
+            "value": {
+              "stringValue": "langchain"
+            }
+          },
+          {
+            "key": "gen_ai.request.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo"
+            }
+          },
+          {
+            "key": "server.address",
+            "value": {
+              "stringValue": "NOT_FOUND"
+            }
+          },
+          {
+            "key": "server.port",
+            "value": {
+              "stringValue": "NOT_FOUND"
+            }
+          },
+          {
+            "key": "gen_ai.response.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo"
+            }
+          }
+        ],
+        "min": 523.0,
+        "max": 796.0
+      }
+    ],
+    "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
   }
+}
 ```
+
 </details>
 
 ### 🍥 OpenLLMetry Local
