@@ -132,141 +132,141 @@ Spans emitted and their names:
 
 ```json
 {
-                    "name": "gen_ai.client.token.usage",
-                    "description": "Measures number of input and output tokens used",
-                    "unit": "token",
-                    "histogram": {
-                      "dataPoints": [
-                        {
-                          "startTimeUnixNano": "1747678319396497000",
-                          "timeUnixNano": "1747678320469829000",
-                          "count": "2",
-                          "sum": 77.0,
-                          "bucketCounts": [
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "2",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0"
-                          ],
-                          "explicitBounds": [
-                            0.0,
-                            5.0,
-                            10.0,
-                            25.0,
-                            50.0,
-                            75.0,
-                            100.0,
-                            250.0,
-                            500.0,
-                            750.0,
-                            1000.0,
-                            2500.0,
-                            5000.0,
-                            7500.0,
-                            10000.0
-                          ],
-                          "attributes": [
-                            {
-                              "key": "gen_ai.system",
-                              "value": {
-                                "stringValue": "Langchain"
-                              }
-                            },
-                            {
-                              "key": "gen_ai.token.type",
-                              "value": {
-                                "stringValue": "input"
-                              }
-                            },
-                            {
-                              "key": "gen_ai.response.model",
-                              "value": {
-                                "stringValue": "gpt-3.5-turbo-0125"
-                              }
-                            }
-                          ],
-                          "min": 38.0,
-                          "max": 39.0
-                        },
-                        {
-                          "startTimeUnixNano": "1747678319396534000",
-                          "timeUnixNano": "1747678320469829000",
-                          "count": "2",
-                          "sum": 100.0,
-                          "bucketCounts": [
-                            "0",
-                            "0",
-                            "1",
-                            "0",
-                            "0",
-                            "0",
-                            "1",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0",
-                            "0"
-                          ],
-                          "explicitBounds": [
-                            0.0,
-                            5.0,
-                            10.0,
-                            25.0,
-                            50.0,
-                            75.0,
-                            100.0,
-                            250.0,
-                            500.0,
-                            750.0,
-                            1000.0,
-                            2500.0,
-                            5000.0,
-                            7500.0,
-                            10000.0
-                          ],
-                          "attributes": [
-                            {
-                              "key": "gen_ai.system",
-                              "value": {
-                                "stringValue": "Langchain"
-                              }
-                            },
-                            {
-                              "key": "gen_ai.token.type",
-                              "value": {
-                                "stringValue": "output"
-                              }
-                            },
-                            {
-                              "key": "gen_ai.response.model",
-                              "value": {
-                                "stringValue": "gpt-3.5-turbo-0125"
-                              }
-                            }
-                          ],
-                          "min": 7.0,
-                          "max": 93.0
-                        }
-                      ],
-                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
-                    }
-              }
+  "name": "gen_ai.client.token.usage",
+  "description": "Measures number of input and output tokens used",
+  "unit": "token",
+  "histogram": {
+    "dataPoints": [
+      {
+        "startTimeUnixNano": "1747678319396497000",
+        "timeUnixNano": "1747678320469829000",
+        "count": "2",
+        "sum": 77.0,
+        "bucketCounts": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "explicitBounds": [
+          0.0,
+          5.0,
+          10.0,
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          250.0,
+          500.0,
+          750.0,
+          1000.0,
+          2500.0,
+          5000.0,
+          7500.0,
+          10000.0
+        ],
+        "attributes": [
+          {
+            "key": "gen_ai.system",
+            "value": {
+              "stringValue": "Langchain"
+            }
+          },
+          {
+            "key": "gen_ai.token.type",
+            "value": {
+              "stringValue": "input"
+            }
+          },
+          {
+            "key": "gen_ai.response.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo-0125"
+            }
+          }
+        ],
+        "min": 38.0,
+        "max": 39.0
+      },
+      {
+        "startTimeUnixNano": "1747678319396534000",
+        "timeUnixNano": "1747678320469829000",
+        "count": "2",
+        "sum": 100.0,
+        "bucketCounts": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "explicitBounds": [
+          0.0,
+          5.0,
+          10.0,
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          250.0,
+          500.0,
+          750.0,
+          1000.0,
+          2500.0,
+          5000.0,
+          7500.0,
+          10000.0
+        ],
+        "attributes": [
+          {
+            "key": "gen_ai.system",
+            "value": {
+              "stringValue": "Langchain"
+            }
+          },
+          {
+            "key": "gen_ai.token.type",
+            "value": {
+              "stringValue": "output"
+            }
+          },
+          {
+            "key": "gen_ai.response.model",
+            "value": {
+              "stringValue": "gpt-3.5-turbo-0125"
+            }
+          }
+        ],
+        "min": 7.0,
+        "max": 93.0
+      }
+    ],
+    "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
+  }
+}
 ```
 
 </details>
