@@ -52,8 +52,8 @@
                     "histogram": {
                       "dataPoints": [
                         {
-                          "startTimeUnixNano": "1747678409754264000",
-                          "timeUnixNano": "1747678411107502000",
+                          "startTimeUnixNano": "1747789955954471000",
+                          "timeUnixNano": "1747789957686307000",
                           "count": "2",
                           "sum": 77.0,
                           "bucketCounts": [
@@ -115,10 +115,10 @@
                           "max": 39.0
                         },
                         {
-                          "startTimeUnixNano": "1747678409754297000",
-                          "timeUnixNano": "1747678411107502000",
+                          "startTimeUnixNano": "1747789955954501000",
+                          "timeUnixNano": "1747789957686307000",
                           "count": "2",
-                          "sum": 132.0,
+                          "sum": 86.0,
                           "bucketCounts": [
                             "0",
                             "0",
@@ -126,8 +126,8 @@
                             "0",
                             "0",
                             "0",
-                            "0",
                             "1",
+                            "0",
                             "0",
                             "0",
                             "0",
@@ -175,7 +175,7 @@
                             }
                           ],
                           "min": 7.0,
-                          "max": 125.0
+                          "max": 79.0
                         }
                       ],
                       "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
@@ -188,10 +188,10 @@
                     "histogram": {
                       "dataPoints": [
                         {
-                          "startTimeUnixNano": "1747678409754444000",
-                          "timeUnixNano": "1747678411107502000",
+                          "startTimeUnixNano": "1747789955954651000",
+                          "timeUnixNano": "1747789957686307000",
                           "count": "2",
-                          "sum": 2.228102207183838,
+                          "sum": 2.511697769165039,
                           "bucketCounts": [
                             "0",
                             "2",
@@ -241,8 +241,8 @@
                               }
                             }
                           ],
-                          "min": 0.8802471160888672,
-                          "max": 1.3478550910949707
+                          "min": 0.7860107421875,
+                          "max": 1.725687026977539
                         }
                       ],
                       "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE"
@@ -257,7 +257,7 @@
       "headers": {
         "user-agent": "grpc-python/1.71.0 grpc-c/46.0.0 (osx; chttp2)"
       },
-      "test_elapsed_ms": 30233
+      "test_elapsed_ms": 31804
     }
   ],
   "trace_requests": [
@@ -307,46 +307,46 @@
                 },
                 "spans": [
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "Gkums1WdMHc=",
-                    "parentSpanId": "6c9xeWCLg/c=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "xP/WJYvWM6A=",
+                    "parentSpanId": "/N6Yu4yu1oo=",
                     "name": "RunnablePassthrough.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678408873542000",
-                    "endTimeUnixNano": "1747678408873610000",
+                    "startTimeUnixNano": "1747789955167983000",
+                    "endTimeUnixNano": "1747789955168048000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "ENTITY_PATH",
+                        "key": "entity.path",
                         "value": {
                           "stringValue": "RunnableParallel<question>"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnablePassthrough"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
                         }
@@ -356,40 +356,40 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "6c9xeWCLg/c=",
-                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "/N6Yu4yu1oo=",
+                    "parentSpanId": "bWm40OIaeF8=",
                     "name": "RunnableParallel<question>.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678408873295000",
-                    "endTimeUnixNano": "1747678408873674000",
+                    "startTimeUnixNano": "1747789955167759000",
+                    "endTimeUnixNano": "1747789955168109000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnableParallel<question>"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"seq:step:1\"], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableParallel<question>\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": {\"question\": \"What is the capital of France?\"}, \"kwargs\": {\"tags\": [\"seq:step:1\"]}}"
                         }
@@ -399,40 +399,40 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "aMrao6iAFSE=",
-                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "cHhaSl2Dt8g=",
+                    "parentSpanId": "bWm40OIaeF8=",
                     "name": "ChatPromptTemplate.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678408873850000",
-                    "endTimeUnixNano": "1747678408874003000",
+                    "startTimeUnixNano": "1747789955168288000",
+                    "endTimeUnixNano": "1747789955168441000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "ChatPromptTemplate"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": {\"question\": \"What is the capital of France?\"}, \"tags\": [\"seq:step:2\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"prompt\", \"name\": \"ChatPromptTemplate\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"prompts\", \"chat\", \"ChatPromptValue\"], \"kwargs\": {\"messages\": [{\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"HumanMessage\"], \"kwargs\": {\"content\": \"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: What is the capital of France?\\n\\n    Please provide a helpful answer:\\n    \", \"type\": \"human\"}}]}}, \"kwargs\": {\"tags\": [\"seq:step:2\"]}}"
                         }
@@ -442,16 +442,16 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "QEZ7rZ0cR14=",
-                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "y8LJdBnY9Q4=",
+                    "parentSpanId": "bWm40OIaeF8=",
                     "name": "ChatOpenAI.chat",
                     "kind": "SPAN_KIND_CLIENT",
-                    "startTimeUnixNano": "1747678408874169000",
-                    "endTimeUnixNano": "1747678409754359000",
+                    "startTimeUnixNano": "1747789955168609000",
+                    "endTimeUnixNano": "1747789955954560000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
@@ -495,7 +495,7 @@
                       {
                         "key": "gen_ai.response.id",
                         "value": {
-                          "stringValue": "chatcmpl-BYzHNprPVP9wGrUHJFMIXjzmrO7dL"
+                          "stringValue": "chatcmpl-BZSIV1MfvD7Qe3XB5yB3HjYPbGjUA"
                         }
                       },
                       {
@@ -539,40 +539,40 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "5LYyl1gAaTU=",
-                    "parentSpanId": "Wb5WUmwp/xo=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "ikPu3EJS0s4=",
+                    "parentSpanId": "bWm40OIaeF8=",
                     "name": "StrOutputParser.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678409755055000",
-                    "endTimeUnixNano": "1747678409755413000",
+                    "startTimeUnixNano": "1747789955955319000",
+                    "endTimeUnixNano": "1747789955955672000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "StrOutputParser"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
-                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"The capital of France is Paris.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 7, \"prompt_tokens\": 39, \"total_tokens\": 46, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BYzHNprPVP9wGrUHJFMIXjzmrO7dL\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--329e4661-84ee-478c-87f4-e1bfc8cc1618-0\", \"usage_metadata\": {\"input_tokens\": 39, \"output_tokens\": 7, \"total_tokens\": 46, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
+                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"The capital of France is Paris.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 7, \"prompt_tokens\": 39, \"total_tokens\": 46, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BZSIV1MfvD7Qe3XB5yB3HjYPbGjUA\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--332c75dc-82bd-485d-8586-be7e0e6de64c-0\", \"usage_metadata\": {\"input_tokens\": 39, \"output_tokens\": 7, \"total_tokens\": 46, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": \"The capital of France is Paris.\", \"kwargs\": {\"tags\": [\"seq:step:4\"]}}"
                         }
@@ -582,39 +582,39 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "e53R2v4FvpQxK0VphaF63w==",
-                    "spanId": "Wb5WUmwp/xo=",
+                    "traceId": "0hFubDClFMKaFe7TefxQOw==",
+                    "spanId": "bWm40OIaeF8=",
                     "name": "RunnableSequence.workflow",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678408873183000",
-                    "endTimeUnixNano": "1747678409755458000",
+                    "startTimeUnixNano": "1747789955167645000",
+                    "endTimeUnixNano": "1747789955955715000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "workflow"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableSequence\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": \"The capital of France is Paris.\", \"kwargs\": {\"tags\": []}}"
                         }
@@ -624,46 +624,46 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "++Qmm+l0I58=",
-                    "parentSpanId": "VeSZDVOi314=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "NDuL4GvsypE=",
+                    "parentSpanId": "lK03k7pA8Y8=",
                     "name": "RunnablePassthrough.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678409756320000",
-                    "endTimeUnixNano": "1747678409756470000",
+                    "startTimeUnixNano": "1747789955956873000",
+                    "endTimeUnixNano": "1747789955957014000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "ENTITY_PATH",
+                        "key": "entity.path",
                         "value": {
                           "stringValue": "RunnableParallel<question>"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnablePassthrough"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": \"How does photosynthesis work?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
                         }
@@ -673,40 +673,40 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "VeSZDVOi314=",
-                    "parentSpanId": "z6qj/Guz+zM=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "lK03k7pA8Y8=",
+                    "parentSpanId": "O16+PlosCQQ=",
                     "name": "RunnableParallel<question>.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678409755872000",
-                    "endTimeUnixNano": "1747678409756612000",
+                    "startTimeUnixNano": "1747789955956151000",
+                    "endTimeUnixNano": "1747789955957142000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnableParallel<question>"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [\"seq:step:1\"], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableParallel<question>\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": {\"question\": \"How does photosynthesis work?\"}, \"kwargs\": {\"tags\": [\"seq:step:1\"]}}"
                         }
@@ -716,40 +716,40 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "+DC3kBHNChM=",
-                    "parentSpanId": "z6qj/Guz+zM=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "ro8pdQlozRs=",
+                    "parentSpanId": "O16+PlosCQQ=",
                     "name": "ChatPromptTemplate.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678409756809000",
-                    "endTimeUnixNano": "1747678409757167000",
+                    "startTimeUnixNano": "1747789955957356000",
+                    "endTimeUnixNano": "1747789955957732000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "ChatPromptTemplate"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": {\"question\": \"How does photosynthesis work?\"}, \"tags\": [\"seq:step:2\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"prompt\", \"name\": \"ChatPromptTemplate\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
                           "stringValue": "{\"outputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"prompts\", \"chat\", \"ChatPromptValue\"], \"kwargs\": {\"messages\": [{\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"HumanMessage\"], \"kwargs\": {\"content\": \"\\n    You are a helpful assistant that provides clear and concise answers.\\n\\n    Question: How does photosynthesis work?\\n\\n    Please provide a helpful answer:\\n    \", \"type\": \"human\"}}]}}, \"kwargs\": {\"tags\": [\"seq:step:2\"]}}"
                         }
@@ -759,16 +759,16 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "61tazLNgeGc=",
-                    "parentSpanId": "z6qj/Guz+zM=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "V4paK9noOnA=",
+                    "parentSpanId": "O16+PlosCQQ=",
                     "name": "ChatOpenAI.chat",
                     "kind": "SPAN_KIND_CLIENT",
-                    "startTimeUnixNano": "1747678409757398000",
-                    "endTimeUnixNano": "1747678411105210000",
+                    "startTimeUnixNano": "1747789955957981000",
+                    "endTimeUnixNano": "1747789957683624000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
@@ -812,13 +812,13 @@
                       {
                         "key": "gen_ai.response.id",
                         "value": {
-                          "stringValue": "chatcmpl-BYzHNOCmYAdhCoEzMjabO8PIEBe3J"
+                          "stringValue": "chatcmpl-BZSIWjaNcLQJ17pHj8YDeE1WuBZsN"
                         }
                       },
                       {
                         "key": "gen_ai.completion.0.content",
                         "value": {
-                          "stringValue": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere."
+                          "stringValue": "Photosynthesis is a process in which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It involves the absorption of sunlight by chlorophyll in chloroplasts, which triggers a series of chemical reactions that ultimately produce glucose and release oxygen as a byproduct. This process is essential for the survival of plants and the conversion of carbon dioxide into oxygen in the atmosphere."
                         }
                       },
                       {
@@ -836,13 +836,13 @@
                       {
                         "key": "gen_ai.usage.completion_tokens",
                         "value": {
-                          "intValue": "125"
+                          "intValue": "79"
                         }
                       },
                       {
                         "key": "llm.usage.total_tokens",
                         "value": {
-                          "intValue": "163"
+                          "intValue": "117"
                         }
                       },
                       {
@@ -856,42 +856,42 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "qH0xcpih0dM=",
-                    "parentSpanId": "z6qj/Guz+zM=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "hJ+EZGxLPNs=",
+                    "parentSpanId": "O16+PlosCQQ=",
                     "name": "StrOutputParser.task",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678411105954000",
-                    "endTimeUnixNano": "1747678411106402000",
+                    "startTimeUnixNano": "1747789957684427000",
+                    "endTimeUnixNano": "1747789957684909000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "task"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "StrOutputParser"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
-                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 125, \"prompt_tokens\": 38, \"total_tokens\": 163, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BYzHNOCmYAdhCoEzMjabO8PIEBe3J\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--bd07a820-9bc8-4178-ab79-a65ff4164826-0\", \"usage_metadata\": {\"input_tokens\": 38, \"output_tokens\": 125, \"total_tokens\": 163, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
+                          "stringValue": "{\"inputs\": {\"lc\": 1, \"type\": \"constructor\", \"id\": [\"langchain\", \"schema\", \"messages\", \"AIMessage\"], \"kwargs\": {\"content\": \"Photosynthesis is a process in which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It involves the absorption of sunlight by chlorophyll in chloroplasts, which triggers a series of chemical reactions that ultimately produce glucose and release oxygen as a byproduct. This process is essential for the survival of plants and the conversion of carbon dioxide into oxygen in the atmosphere.\", \"additional_kwargs\": {\"refusal\": null}, \"response_metadata\": {\"token_usage\": {\"completion_tokens\": 79, \"prompt_tokens\": 38, \"total_tokens\": 117, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cached_tokens\": 0}}, \"model_name\": \"gpt-3.5-turbo-0125\", \"system_fingerprint\": null, \"id\": \"chatcmpl-BZSIWjaNcLQJ17pHj8YDeE1WuBZsN\", \"service_tier\": \"default\", \"finish_reason\": \"stop\", \"logprobs\": null}, \"type\": \"ai\", \"id\": \"run--5e108410-0fa3-4093-ae06-63538cffabfc-0\", \"usage_metadata\": {\"input_tokens\": 38, \"output_tokens\": 79, \"total_tokens\": 117, \"input_token_details\": {\"audio\": 0, \"cache_read\": 0}, \"output_token_details\": {\"audio\": 0, \"reasoning\": 0}}, \"tool_calls\": [], \"invalid_tool_calls\": []}}, \"tags\": [\"seq:step:4\"], \"metadata\": {}, \"kwargs\": {\"run_type\": \"parser\", \"name\": \"StrOutputParser\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
-                          "stringValue": "{\"outputs\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"kwargs\": {\"tags\": [\"seq:step:4\"]}}"
+                          "stringValue": "{\"outputs\": \"Photosynthesis is a process in which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It involves the absorption of sunlight by chlorophyll in chloroplasts, which triggers a series of chemical reactions that ultimately produce glucose and release oxygen as a byproduct. This process is essential for the survival of plants and the conversion of carbon dioxide into oxygen in the atmosphere.\", \"kwargs\": {\"tags\": [\"seq:step:4\"]}}"
                         }
                       }
                     ],
@@ -899,41 +899,41 @@
                     "flags": 256
                   },
                   {
-                    "traceId": "JrdUK+sCCIitbzVHrx1gmw==",
-                    "spanId": "z6qj/Guz+zM=",
+                    "traceId": "5XyM4F5mNp+61uRTK5+0dQ==",
+                    "spanId": "O16+PlosCQQ=",
                     "name": "RunnableSequence.workflow",
                     "kind": "SPAN_KIND_INTERNAL",
-                    "startTimeUnixNano": "1747678409755687000",
-                    "endTimeUnixNano": "1747678411106448000",
+                    "startTimeUnixNano": "1747789955955963000",
+                    "endTimeUnixNano": "1747789957684976000",
                     "attributes": [
                       {
-                        "key": "WORKFLOW_NAME",
+                        "key": "workflow.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "SPAN_KIND",
+                        "key": "span.kind",
                         "value": {
                           "stringValue": "workflow"
                         }
                       },
                       {
-                        "key": "ENTITY_NAME",
+                        "key": "entity.name",
                         "value": {
                           "stringValue": "RunnableSequence"
                         }
                       },
                       {
-                        "key": "ENTITY_INPUT",
+                        "key": "entity.input",
                         "value": {
                           "stringValue": "{\"inputs\": \"How does photosynthesis work?\", \"tags\": [], \"metadata\": {}, \"kwargs\": {\"name\": \"RunnableSequence\"}}"
                         }
                       },
                       {
-                        "key": "ENTITY_OUTPUT",
+                        "key": "entity.output",
                         "value": {
-                          "stringValue": "{\"outputs\": \"Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into energy in the form of glucose. This process involves capturing sunlight using chlorophyll, a pigment found in the chloroplasts of plant cells. The sunlight is used to convert carbon dioxide and water into glucose and oxygen. This chemical reaction is facilitated by enzymes and other proteins in the plant. The glucose produced is used by the plant for energy and growth, while the oxygen is released into the atmosphere as a byproduct. Overall, photosynthesis is crucial for the survival of plants and the balance of oxygen and carbon dioxide in the atmosphere.\", \"kwargs\": {\"tags\": []}}"
+                          "stringValue": "{\"outputs\": \"Photosynthesis is a process in which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It involves the absorption of sunlight by chlorophyll in chloroplasts, which triggers a series of chemical reactions that ultimately produce glucose and release oxygen as a byproduct. This process is essential for the survival of plants and the conversion of carbon dioxide into oxygen in the atmosphere.\", \"kwargs\": {\"tags\": []}}"
                         }
                       }
                     ],
@@ -949,7 +949,7 @@
       "headers": {
         "user-agent": "grpc-python/1.71.0 grpc-c/46.0.0 (osx; chttp2)"
       },
-      "test_elapsed_ms": 30236
+      "test_elapsed_ms": 31807
     }
   ],
   "log_requests": []

@@ -410,8 +410,8 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
         else:
             span = self.tracer.start_span(span_name, kind=kind)
 
-        _set_span_attribute(span, "WORKFLOW_NAME", workflow_name)
-        _set_span_attribute(span, "ENTITY_PATH", entity_path)
+        _set_span_attribute(span, "workflow.name", workflow_name)
+        _set_span_attribute(span, "entity.path", entity_path)
 
         token = context_api.attach(
             context_api.set_value(SUPPRESS_LANGUAGE_MODEL_INSTRUMENTATION_KEY, True)
@@ -448,8 +448,8 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
             metadata=metadata,
         )
 
-        _set_span_attribute(span, "SPAN_KIND", kind.value)
-        _set_span_attribute(span, "ENTITY_NAME", entity_name)
+        _set_span_attribute(span, "span.kind", kind.value)
+        _set_span_attribute(span, "entity.name", entity_name)
 
         return span
 
@@ -523,7 +523,7 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
         if should_send_prompts():
             _set_span_attribute(
                 span,
-                "ENTITY_INPUT",
+                "entity.input",
                 json.dumps(
                     {
                         "inputs": inputs,
@@ -555,7 +555,7 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
         if should_send_prompts():
             _set_span_attribute(
                 span,
-                "ENTITY_OUTPUT",
+                "entity.output",
                 json.dumps(
                     {"outputs": outputs, "kwargs": kwargs},
                     cls=CallbackFilteredJSONEncoder,
@@ -737,7 +737,7 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
         if should_send_prompts():
             _set_span_attribute(
                 span,
-                "ENTITY_INPUT",
+                "entity.input",
                 json.dumps(
                     {
                         "input_str": input_str,
@@ -767,7 +767,7 @@ class TraceloopCallbackHandler(BaseCallbackHandler):
         if should_send_prompts():
             _set_span_attribute(
                 span,
-                "ENTITY_OUTPUT",
+                "entity.output",
                 json.dumps(
                     {"output": output, "kwargs": kwargs},
                     cls=CallbackFilteredJSONEncoder,
