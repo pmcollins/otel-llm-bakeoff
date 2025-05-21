@@ -131,7 +131,7 @@ Span Names:
 <details>
 <summary>Sample metric: gen_ai.client.token.usage</summary>
 
-```
+```json
   {
     "name": "gen_ai.client.token.usage",
     "description": "Measures number of input and output tokens used",
