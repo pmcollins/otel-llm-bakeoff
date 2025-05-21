@@ -148,3 +148,234 @@ Example span:
     "flags": 256
   }
 ```
+## 🍰 OpenLit 
+
+```json
+{
+  "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
+  "spanId": "K1hO3xWK4TI=",
+  "parentSpanId": "PhwkOMkjUss=",
+  "name": "chat gpt-3.5-turbo",
+  "kind": "SPAN_KIND_CLIENT",
+  "startTimeUnixNano": "1747330242830926000",
+  "endTimeUnixNano": "1747330244009197000",
+  "attributes": [
+    {
+      "key": "telemetry.sdk.name",
+      "value": {
+        "stringValue": "openlit"
+      }
+    },
+    {
+      "key": "gen_ai.operation.name",
+      "value": {
+        "stringValue": "chat"
+      }
+    },
+    {
+      "key": "gen_ai.system",
+      "value": {
+        "stringValue": "openai"
+      }
+    },
+    {
+      "key": "gen_ai.request.model",
+      "value": {
+        "stringValue": "gpt-3.5-turbo"
+      }
+    },
+    {
+      "key": "gen_ai.request.seed",
+      "value": {
+        "stringValue": ""
+      }
+    },
+    {
+      "key": "server.port",
+      "value": {
+        "intValue": "443"
+      }
+    },
+    {
+      "key": "gen_ai.request.frequency_penalty",
+      "value": {
+        "doubleValue": 0.0
+      }
+    },
+    {
+      "key": "gen_ai.request.max_tokens",
+      "value": {
+        "intValue": "-1"
+      }
+    },
+    {
+      "key": "gen_ai.request.presence_penalty",
+      "value": {
+        "doubleValue": 0.0
+      }
+    },
+    {
+      "key": "gen_ai.request.stop_sequences",
+      "value": {
+        "arrayValue": {}
+      }
+    },
+    {
+      "key": "gen_ai.request.temperature",
+      "value": {
+        "doubleValue": 1.0
+      }
+    },
+    {
+      "key": "gen_ai.request.top_p",
+      "value": {
+        "doubleValue": 1.0
+      }
+    },
+    {
+      "key": "gen_ai.response.id",
+      "value": {
+        "stringValue": "chatcmpl-BXWhn3eOVSstuEh9tl4ohhMo75pX9"
+      }
+    },
+    {
+      "key": "gen_ai.response.model",
+      "value": {
+        "stringValue": "gpt-3.5-turbo-0125"
+      }
+    },
+    {
+      "key": "gen_ai.usage.input_tokens",
+      "value": {
+        "intValue": "39"
+      }
+    },
+    {
+      "key": "gen_ai.usage.output_tokens",
+      "value": {
+        "intValue": "7"
+      }
+    },
+    {
+      "key": "server.address",
+      "value": {
+        "stringValue": "api.openai.com"
+      }
+    },
+    {
+      "key": "gen_ai.request.service_tier",
+      "value": {
+        "stringValue": "auto"
+      }
+    },
+    {
+      "key": "gen_ai.response.service_tier",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "gen_ai.response.system_fingerprint",
+      "value": {
+        "stringValue": "None"
+      }
+    },
+    {
+      "key": "deployment.environment",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "service.name",
+      "value": {
+        "stringValue": "default"
+      }
+    },
+    {
+      "key": "gen_ai.request.user",
+      "value": {
+        "stringValue": ""
+      }
+    },
+    {
+      "key": "gen_ai.request.is_stream",
+      "value": {
+        "boolValue": false
+      }
+    },
+    {
+      "key": "gen_ai.usage.total_tokens",
+      "value": {
+        "intValue": "46"
+      }
+    },
+    {
+      "key": "gen_ai.usage.cost",
+      "value": {
+        "doubleValue": 3e-05
+      }
+    },
+    {
+      "key": "gen_ai.server.time_to_first_token",
+      "value": {
+        "doubleValue": 1.172328233718872
+      }
+    },
+    {
+      "key": "gen_ai.sdk.version",
+      "value": {
+        "stringValue": "1.78.1"
+      }
+    },
+    {
+      "key": "gen_ai.response.finish_reasons",
+      "value": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "stop"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "gen_ai.output.type",
+      "value": {
+        "stringValue": "text"
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeUnixNano": "1747330244008622000",
+      "name": "gen_ai.content.prompt",
+      "attributes": [
+        {
+          "key": "gen_ai.prompt",
+          "value": {
+            "stringValue": "user: \n    You are a helpful assistant that provides clear and concise answers.\n\n    Question: What is the capital of France?\n\n    Please provide a helpful answer:\n    "
+          }
+        }
+      ]
+    },
+    {
+      "timeUnixNano": "1747330244008661000",
+      "name": "gen_ai.content.completion",
+      "attributes": [
+        {
+          "key": "gen_ai.completion",
+          "value": {
+            "stringValue": "The capital of France is Paris."
+          }
+        }
+      ]
+    }
+  ],
+  "status": {
+    "code": "STATUS_CODE_OK"
+  },
+  "flags": 256
+}
+```
