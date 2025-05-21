@@ -267,7 +267,7 @@ To run the example scripts and see their telemetry:
 ```
 </details>
 
-## 🍰 OpenLit
+### 🍰 OpenLit
 
 <details>
 <summary>Sample span</summary>
