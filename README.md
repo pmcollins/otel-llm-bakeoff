@@ -43,6 +43,64 @@ To run the example scripts and see their telemetry:
 
 ## Output
 
+### 🧁 OpenLLMetry
+
+### 🍥 OpenLLMetry Local
+
+Example span:
+
+```json
+{
+  "traceId": "e53R2v4FvpQxK0VphaF63w==",
+  "spanId": "Gkums1WdMHc=",
+  "parentSpanId": "6c9xeWCLg/c=",
+  "name": "RunnablePassthrough.task",
+  "kind": "SPAN_KIND_INTERNAL",
+  "startTimeUnixNano": "1747678408873542000",
+  "endTimeUnixNano": "1747678408873610000",
+  "attributes": [
+    {
+      "key": "WORKFLOW_NAME",
+      "value": {
+        "stringValue": "RunnableSequence"
+      }
+    },
+    {
+      "key": "ENTITY_PATH",
+      "value": {
+        "stringValue": "RunnableParallel<question>"
+      }
+    },
+    {
+      "key": "SPAN_KIND",
+      "value": {
+        "stringValue": "task"
+      }
+    },
+    {
+      "key": "ENTITY_NAME",
+      "value": {
+        "stringValue": "RunnablePassthrough"
+      }
+    },
+    {
+      "key": "ENTITY_INPUT",
+      "value": {
+        "stringValue": "{\"inputs\": \"What is the capital of France?\", \"tags\": [\"map:key:question\"], \"metadata\": {}, \"kwargs\": {\"run_type\": null, \"name\": \"RunnablePassthrough\"}}"
+      }
+    },
+    {
+      "key": "ENTITY_OUTPUT",
+      "value": {
+        "stringValue": "{\"outputs\": \"What is the capital of France?\", \"kwargs\": {\"tags\": [\"map:key:question\"]}}"
+      }
+    }
+  ],
+  "status": {},
+  "flags": 256
+}
+```
+
 ### 🥮 LangSmith
 
 Example span:
