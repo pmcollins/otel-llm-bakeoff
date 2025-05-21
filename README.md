@@ -271,7 +271,6 @@ To run the example scripts and see their telemetry:
 
 <details>
 <summary>Sample span</summary>
-  
 ```json
 {
   "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
