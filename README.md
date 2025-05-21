@@ -45,7 +45,8 @@ To run the example scripts and see their telemetry:
 
 ### 🧁 OpenLLMetry
 
-Sample span:
+<details>
+<summary>Sample span</summary>
 
 ```json
 {
@@ -98,10 +99,12 @@ Sample span:
   "flags": 256
 }
 ```
+</details> 
 
 ### 🍥 OpenLLMetry Local
 
-Sample span:
+<details>
+<summary>Sample span</summary>
 
 ```json
 {
@@ -154,10 +157,12 @@ Sample span:
   "flags": 256
 }
 ```
+</details>
 
 ### 🥮 LangSmith
 
-Sample span:
+<details>
+<summary>Sample span</summary>
 
 ```json
 {
@@ -260,10 +265,13 @@ Sample span:
     "flags": 256
   }
 ```
+</details>
+
 ## 🍰 OpenLit
 
-Sample span:
-
+<details>
+<summary>Sample span</summary>
+  
 ```json
 {
   "traceId": "Q9YhchNPeQvhkdqwCmaxLA==",
@@ -493,3 +501,4 @@ Sample span:
   "flags": 256
 }
 ```
+</details>
