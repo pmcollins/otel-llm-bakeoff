@@ -35,7 +35,7 @@ To run the example scripts and see their telemetry:
     * Not many changes required to locally build a vendor-neutral package.
 * 🥮 LangSmith
     * Telemetry looks like OpenLLMetry's except instead of "traceloop" in attribute names, it's "langsmith".
-    * No metrics, just spans (the original OpenLLMetry instrumentor sends both).
+    * No metrics, just spans (the original OpenLLMetry instrumentor emits both).
 * 🍰 OpenLit
     * An observability platform, of which instrumentation is just a part.
     * OpenLit's packaging is monolithic, so if you `pip install openlit` you get several instrumentors and capabilities
