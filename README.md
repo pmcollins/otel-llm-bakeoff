@@ -9,9 +9,9 @@ the [output](output) directory.
 ## Instrumentation Scenarios
 
 - **🧁 OpenLLMetry** ([`ott-llmetry.py`](ott-llmetry.py)): uses the OpenLLMetry instrumentation library, unmodified.
-- **🍥 OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): uses a [local copy](openllmetry) of
-  just the `opentelemetry-instrumentation-langchain` package and its local dependencies with vendor-specific strings
-  removed.
+- **🍥 OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): uses
+  a [local copy](opentelemetry-instrumentation-langchain) of just the `opentelemetry-instrumentation-langchain` package
+  with vendor-specific strings removed.
 - **🥮 LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): uses LangChain's included observability tooling, which
   appears to be derived from OpenLLMetry's instrumentor.
 - **🍰 OpenLit** ([`ott-lit.py`](ott-lit.py)): uses the OpenLit observability platform and instrumentation library for

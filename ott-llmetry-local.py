@@ -13,7 +13,7 @@ class OtelTest:
     def requirements(self):
         return [
             "urllib3<2.0", "langchain", "langchain-openai", "langchain-community",
-            "opentelemetry-distro[otlp]", "./openllmetry/opentelemetry-instrumentation-langchain"
+            "opentelemetry-distro[otlp]", "./opentelemetry-instrumentation-langchain"
         ]
 
     def is_http(self) -> bool:
