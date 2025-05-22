@@ -940,3 +940,29 @@ This instrumentation emits four spans for this scenario and they all have the na
 
 </details>
 
+## Conclusions
+
+Because LangSmith and our local copy of OpenLLMetry are both repackaged OpenLLMetry, we can say that the four options
+being compared here can be reduced to two options: OpenLLMetry and OpenLit.
+
+Comparison of major features:
+
+**🧁 OpenLLMetry**
+✅ Modular packaging
+❌ Vendor-specific telemetry attributes
+✅ High fidelity traces
+❌ Rudimentary metrics
+
+**🍰 OpenLit**
+❌ Monolithic packaging
+✅ Vendor-neutral telemetry attributes
+❌ Rudimentary traces
+✅ High fidelity metrics
+
+In either case, the codebase will likely have to be forked:
+
+- OpenLLMetry to replace vendor-specific attributes with vendor-neutral ones.
+- OpenLit so customers can install just the instrumentor.
+
+But because OpenLLMetry is packaged independently, copying/forking/donating that code is easier, making it perhaps a
+better choice.
