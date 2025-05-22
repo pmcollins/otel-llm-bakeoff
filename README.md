@@ -29,14 +29,14 @@ To run the example scripts and see their telemetry:
 
 * 🧁 OpenLLMetry
     * Repo uses modular packaging, so you can `pip install opentelemetry-instrumentation-langchain` separately.
-    * Emits telemetry with attribute keys containing the word "traceloop"
+    * Emits telemetry with attribute keys containing the word "traceloop".
     * OpenLLMetry has claimed the package names of upstream OTel.
 * 🍥 Local copy of OpenLLMetry package(s)
     * Not many changes required to locally build a vendor-neutral package.
-* 🥮 LangSmith:
-    * Telemetry looks like OpenLLMetry's except instead of "traceloop" in attrubute names, you get "langsmith".
-    * No metrics, just spans (the original OpenLLMetry instrumentor sends metrics + spans).
-* 🍰 OpenLit:
+* 🥮 LangSmith
+    * Telemetry looks like OpenLLMetry's except instead of "traceloop" in attribute names, it's "langsmith".
+    * No metrics, just spans (the original OpenLLMetry instrumentor sends both).
+* 🍰 OpenLit
     * An observability platform, of which instrumentation is just a part.
     * OpenLit's packaging is monolithic, so if you `pip install openlit` you get several instrumentors and capabilities
       that are not relevant.
