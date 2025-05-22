@@ -454,7 +454,7 @@ _Number of spans and their names are identical to OpenLLMetry._
 
 #### Metrics
 
-_Metrics are identical to OpenLLMetry's._
+_No metrics emitted._
 
 ### 🍰 OpenLit
 
