@@ -967,5 +967,9 @@ In either case, the codebase will likely have to be forked:
 - OpenLLMetry to replace vendor-specific attributes with vendor-neutral ones.
 - OpenLit so customers can install just the instrumentor.
 
-But because OpenLLMetry is packaged independently, copying/forking/donating that code is easier, making it perhaps a
-better choice.
+Because OpenLLMetry uses fine-grained packaging, using its Langchain intrumentor code as a starting point would be
+straightforward. This has already been mostly done
+[here](https://github.com/zhirafovod/opentelemetry-python-contrib/pull/1/files).
+Its vendor specific attributes are easily stripped, as has been done in the
+[opentelemetry-instrumentation-langchain](opentelemetry-instrumentation-langchain)
+directory.
