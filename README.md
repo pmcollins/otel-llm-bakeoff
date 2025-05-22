@@ -948,16 +948,16 @@ being compared here can be reduced to two options: OpenLLMetry and OpenLit.
 Comparison of major features:
 
 **🧁 OpenLLMetry**
-✅ Modular packaging
-❌ Vendor-specific telemetry attributes
-✅ High fidelity traces
-❌ Rudimentary metrics
+- ✅ Modular packaging
+- ❌ Vendor-specific telemetry attributes
+- ✅ High fidelity traces
+- ❌ Rudimentary metrics
 
 **🍰 OpenLit**
-❌ Monolithic packaging
-✅ Vendor-neutral telemetry attributes
-❌ Rudimentary traces
-✅ High fidelity metrics
+- ❌ Monolithic packaging
+- ✅ Vendor-neutral telemetry attributes
+- ❌ Rudimentary traces
+- ✅ High fidelity metrics
 
 In either case, the codebase will likely have to be forked:
 
