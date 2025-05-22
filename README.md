@@ -6,15 +6,16 @@ Each scenario runs the same LangChain application, instrumented differently and 
 an [oteltest](https://github.com/pmcollins/oteltest) script. The output from these runs is committed to
 the [output](output) directory.
 
-## Instrumentation Approaches
+## Instrumentation Scenarios
 
-- **🧁 OpenLLMetry** ([`ott-llmetry.py`](ott-llmetry.py)): an instrumentation library for LLM applications.
-- **🍥 OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): a [local copy](openllmetry) of
-  the `opentelemetry-instrumentation-langchain` package and its local dependencies with vendor-specific strings removed.
-- **🥮 LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): LangChain's included observability tooling, which appears to
-  be derived from OpenLLMetry's instrumentor.
-- **🍰 OpenLit** ([`ott-lit.py`](ott-lit.py)): an observability platform and instrumentation library for LLM
-  applications.
+- **🧁 OpenLLMetry** ([`ott-llmetry.py`](ott-llmetry.py)): uses the OpenLLMetry instrumentation library, unmodified.
+- **🍥 OpenLLMetry (Local Copy)** ([`ott-llmetry-local.py`](ott-llmetry-local.py)): uses a [local copy](openllmetry) of
+  just the `opentelemetry-instrumentation-langchain` package and its local dependencies with vendor-specific strings
+  removed.
+- **🥮 LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): uses LangChain's included observability tooling, which
+  appears to be derived from OpenLLMetry's instrumentor.
+- **🍰 OpenLit** ([`ott-lit.py`](ott-lit.py)): uses the OpenLit observability platform and instrumentation library for
+  LLM applications.
 
 ## Operation
 
@@ -948,12 +949,14 @@ being compared here can be reduced to two options: OpenLLMetry and OpenLit.
 Comparison of major features:
 
 **🧁 OpenLLMetry**
+
 - ✅ Modular packaging
 - ❌ Vendor-specific telemetry attributes
 - ✅ High fidelity traces
 - ❌ Rudimentary metrics
 
 **🍰 OpenLit**
+
 - ❌ Monolithic packaging
 - ✅ Vendor-neutral telemetry attributes
 - ❌ Rudimentary traces
