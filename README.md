@@ -972,4 +972,7 @@ straightforward. This has already been mostly done
 [here](https://github.com/zhirafovod/opentelemetry-python-contrib/pull/1/files).
 Its vendor specific attributes are easily stripped, as has been done in the
 [opentelemetry-instrumentation-langchain](opentelemetry-instrumentation-langchain)
-directory.
+directory. The only remaining item is metrics, which are relatively simple in the case of OpenLLMetry, but OpenLit's
+implementation can be used as a starting point.
+
+
