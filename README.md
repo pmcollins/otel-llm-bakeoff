@@ -15,7 +15,7 @@ the [output](output) directory.
 - **🥮 LangSmith** ([`ott-langsmith.py`](ott-langsmith.py)): uses LangChain's included observability tooling, which
   appears to be derived from OpenLLMetry's instrumentor.
 - **🍰 OpenLit** ([`ott-lit.py`](ott-lit.py)): uses the OpenLit Python package, which is a collection of instrumentation
-  libraries and other capabilities for LLM application Observability.
+  libraries and other capabilities for LLM observability.
 
 ## Operation
 
