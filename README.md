@@ -59,12 +59,6 @@ Spans emitted and their names:
 - ChatOpenAI
 - StrOutputParser
 - RunnableSequence
-- RunnablePassthrough
-- RunnableParallel
-- ChatPRomptTemplate
-- ChatOpenAI
-- StrOutputParer
-- RunnableSequence
 
 <details>
 <summary>Sample span: RunnablePassthrough.task</summary>
